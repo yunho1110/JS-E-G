@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="정수 E&G (전남 광양) — 지붕 임대 태양광, 발전소·시설 구축, ESS, 신재생에너지 컨설팅. 사업성 검토부터 인허가·시공·20년 운영까지 한 회사가 책임집니다.">
+<meta property="og:title" content="인사말 | 정수 E&G">
+<meta property="og:description" content="지붕 임대 태양광 · 발전소 구축 · ESS · 신재생에너지 컨설팅">
+<meta property="og:type" content="website">
+<!-- TODO: og:image (1200×630 현장 사진), canonical URL -->
+<title>인사말 | 정수 E&G</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+  :root{
+    --navy:#1E6B3A; --navy-deep:#0E3B21; --sun:#8CC63F; --sun-deep:#74AD2E;
+    --ink:#1B2A20; --muted:#5D6E62; --line:#D6E3D3; --paper:#FFFFFF; --sky:#EFF6EA; --sky-2:#DDEBD4;
+    --nav-h:84px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#E8F0E9; --muted:#9DB3A3; --line:#254633; --paper:#0B1A11; --sky:#12261A; --sky-2:#183322; --navy:#1E6B3A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#E8F0E9; --muted:#9DB3A3; --line:#254633; --paper:#0B1A11; --sky:#12261A; --sky-2:#183322;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans KR",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-size:16px;line-height:1.7;word-break:keep-all;overflow-x:hidden}
+  h1,h2,h3,h4{font-family:"IBM Plex Sans KR","Noto Sans KR",sans-serif;line-height:1.3;margin:0;text-wrap:balance}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%}
+  .wrap{width:min(1200px,100% - 48px);margin-inline:auto}
+  @media (max-width:640px){.wrap{width:min(1200px,100% - 32px)}}
+  :focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+  .skip{position:absolute;left:-999px;top:8px;z-index:60;background:var(--sun);color:#0B2A12;padding:8px 14px;border-radius:8px;font-weight:700}
+  .skip:focus{left:8px}
+
+  /* ───── Header / GNB ───── */
+  .site-header{position:fixed;inset:0 0 auto 0;height:var(--nav-h);z-index:50;transition:background .25s,box-shadow .25s,color .25s;color:#fff}
+  .site-header.solid,.site-header.open{background:var(--paper);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+  .site-header .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+  .logo{display:flex;align-items:center;gap:10px;font-family:"IBM Plex Sans KR",sans-serif;font-weight:700;font-size:22px;letter-spacing:-.01em}
+  .logo svg{width:36px;height:36px;flex:none}
+  .logo span{display:flex;flex-direction:column;line-height:1.05}
+  .logo small{font-size:10px;font-weight:500;letter-spacing:.08em;color:var(--sun);font-style:italic}
+  .gnb{display:flex;align-items:center;gap:8px;list-style:none;margin:0;padding:0;height:100%}
+  .gnb>li{position:relative;height:100%;display:flex;align-items:center}
+  .gnb>li>a{display:block;padding:10px 20px;font-weight:500;font-size:17px;border-radius:999px;transition:color .2s}
+  .gnb>li:hover>a,.gnb>li:focus-within>a{color:var(--sun)}
+  .sub{position:absolute;top:calc(100% - 12px);left:50%;transform:translate(-50%,8px);min-width:200px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 40px rgba(14,59,33,.16);padding:10px 0;list-style:none;margin:0;opacity:0;visibility:hidden;transition:opacity .18s,transform .18s,visibility .18s}
+  .sub::before{content:"";position:absolute;left:50%;top:-7px;width:12px;height:12px;background:var(--paper);border-left:1px solid var(--line);border-top:1px solid var(--line);transform:translateX(-50%) rotate(45deg)}
+  .gnb>li:hover .sub,.gnb>li:focus-within .sub{opacity:1;visibility:visible;transform:translate(-50%,0)}
+  .sub a{display:block;padding:9px 22px;font-size:15px;color:var(--ink);white-space:nowrap;text-align:center}
+  .sub a:hover{background:var(--sky);color:var(--navy)}
+  .sub a:hover{font-weight:500}
+  .cta-nav{padding:10px 22px;border-radius:999px;background:var(--sun);color:#0B2A12;font-weight:700;font-size:15px;white-space:nowrap;transition:background .2s}
+  .cta-nav:hover{background:var(--sun-deep)}
+  .burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:inherit;padding:0}
+  .burger span{display:block;width:24px;height:2px;background:currentColor;margin:5px auto;transition:transform .25s,opacity .25s}
+  .site-header.open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .site-header.open .burger span:nth-child(2){opacity:0}
+  .site-header.open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-right{display:flex;align-items:center;gap:12px;height:100%}
+
+  /* mobile menu */
+  .mnav{display:none;position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;background:var(--paper);color:var(--ink);z-index:49;overflow-y:auto;padding:8px 0 40px;border-top:1px solid var(--line)}
+  .mnav.open{display:block}
+  .mnav .wrap{display:block}
+  .macc{border-bottom:1px solid var(--line)}
+  .macc>button{width:100%;background:none;border:0;padding:18px 4px;display:flex;justify-content:space-between;align-items:center;font:inherit;font-size:18px;font-weight:600;color:var(--ink);cursor:pointer;font-family:"IBM Plex Sans KR",sans-serif}
+  .macc>button svg{width:18px;height:18px;transition:transform .25s;color:var(--muted)}
+  .macc.open>button{color:var(--sun)}
+  .macc.open>button svg{transform:rotate(180deg)}
+  .macc ul{list-style:none;margin:0;padding:0;overflow:hidden;max-height:0;transition:max-height .3s ease}
+  .macc.open ul{max-height:400px}
+  .macc ul a{display:block;padding:11px 16px;font-size:16px;color:var(--muted);border-left:2px solid var(--line);margin:0 0 4px 8px}
+  .macc ul a:hover{color:var(--navy);border-color:var(--sun)}
+  .macc ul li:last-child a{margin-bottom:18px}
+  .mnav .m-cta{display:block;margin:28px 0 0;text-align:center;padding:15px;border-radius:12px;background:var(--sun);color:#0B2A12;font-weight:700;font-size:17px}
+  .mnav .m-tel{display:flex;justify-content:center;gap:8px;margin-top:16px;color:var(--muted);font-size:14px}
+  @media (max-width:960px){
+    :root{--nav-h:68px}
+    .gnb,.cta-nav{display:none}
+    .burger{display:block}
+    .logo{font-size:19px}
+    .logo svg{width:30px;height:30px}
+  }
+
+  /* ───── Hero ───── */
+  .hero{position:relative;min-height:600px;padding:calc(var(--nav-h) + 96px) 0 110px;display:flex;align-items:center;color:#fff;background:var(--navy-deep);overflow:hidden}
+  .hero .bg{position:absolute;inset:0;background:
+      linear-gradient(90deg,rgba(14,59,33,.85) 0%,rgba(14,59,33,.45) 55%,rgba(14,59,33,.15) 100%),
+      linear-gradient(180deg,#1A6A3A 0%,#0F4A28 60%,#0A331B 100%)}
+  .hero .panel{position:absolute;right:-4%;bottom:-22%;width:72%;max-width:960px;aspect-ratio:16/10;transform:perspective(1400px) rotateX(56deg) rotateZ(-12deg);transform-origin:center;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2264%22%20height%3D%2264%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20fill%3D%22%232E6C93%22/%3E%3Crect%20x%3D%222.5%22%20y%3D%222.5%22%20width%3D%2259%22%20height%3D%2259%22%20fill%3D%22%230F2F4C%22/%3E%3Cpath%20d%3D%22M4%2060L60%204%22%20stroke%3D%22%231C4A6E%22%20stroke-width%3D%221.2%22/%3E%3Cpath%20d%3D%22M4%2032L32%204M32%2060L60%2032%22%20stroke%3D%22%23173F60%22%20stroke-width%3D%221%22/%3E%3C/svg%3E") 0 0/64px 64px;border:4px solid #B9C7D1;border-radius:4px;box-shadow:0 50px 90px rgba(0,0,0,.5), inset 0 0 0 1px rgba(255,255,255,.2)}
+  .hero .panel::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(255,255,255,.22) 0%,rgba(255,255,255,0) 35%,rgba(0,0,0,0) 60%,rgba(0,0,0,.35) 100%)}
+  .hero .wm{position:absolute;right:-.04em;bottom:-.18em;font-family:"IBM Plex Sans KR",sans-serif;font-style:italic;font-weight:600;font-size:clamp(80px,14vw,210px);letter-spacing:-.04em;line-height:1;color:rgba(255,255,255,.045);white-space:nowrap;pointer-events:none;user-select:none}
+  .hero .wrap{position:relative}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--navy);margin-bottom:22px}
+  .eyebrow::before{content:"";width:28px;height:2px;background:currentColor;opacity:.6}
+  .hero .eyebrow,.contact .eyebrow{color:var(--sun)}
+  .hero h1{font-size:clamp(36px,5.8vw,68px);font-weight:700;letter-spacing:-.03em;max-width:14ch}
+  .hero h1 em{font-style:normal;color:var(--sun)}
+  .hero p{font-size:clamp(16px,1.6vw,20px);max-width:32ch;margin:22px 0 0;color:rgba(255,255,255,.85)}
+  .hero-stats{display:flex;gap:40px;margin-top:48px;flex-wrap:wrap}
+  .hero-stats div{border-left:2px solid rgba(255,255,255,.25);padding-left:14px}
+  .hero-stats b{display:block;font-family:"IBM Plex Sans KR",sans-serif;font-size:28px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.1}
+  .hero-stats span{font-size:13px;color:rgba(255,255,255,.7)}
+
+  /* 문의하기 strip (메인 비주얼 바로 아래) */
+  .inquiry-strip{background:var(--sun);color:#0B2A12}
+  .inquiry-strip .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:18px;flex-wrap:wrap}
+  .inquiry-strip strong{font-family:"IBM Plex Sans KR",sans-serif;font-size:18px;font-weight:600}
+  .inquiry-strip small{display:block;font-size:14px;opacity:.8;font-weight:400}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:13px 26px;border-radius:999px;font-weight:700;font-size:15px;transition:transform .15s,background .2s;white-space:nowrap}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-dark{background:var(--navy-deep);color:#fff}
+  .btn-dark:hover{background:#071F11}
+  .btn-sun{background:var(--sun);color:#0B2A12}
+  .btn-sun:hover{background:var(--sun-deep)}
+  .btn-line{border:1.5px solid var(--line);color:var(--ink)}
+  .btn-line:hover{border-color:var(--navy);background:var(--sky)}
+  .btn svg{width:16px;height:16px}
+
+  /* ───── Sections ───── */
+  section.block{padding-block:clamp(72px,9vw,120px)}
+  .sec-head{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;margin-bottom:44px}
+  .sec-head h2{font-size:clamp(26px,3.4vw,40px);font-weight:700;letter-spacing:-.02em}
+  .sec-head p{margin:12px 0 0;color:var(--muted);max-width:60ch}
+  .sec-head .more{color:var(--navy);font-weight:500;font-size:15px;display:inline-flex;align-items:center;gap:6px;padding-bottom:6px;border-bottom:1.5px solid var(--sun)}
+  @media (max-width:640px){.sec-head{grid-template-columns:1fr}}
+
+  /* 회사 소개 요약 */
+  .about{background:var(--paper)}
+  .about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}
+  .about-copy h2{font-size:clamp(26px,3.4vw,40px);letter-spacing:-.02em}
+  .about-copy p{color:var(--muted);margin:20px 0 0;max-width:52ch}
+  .about-copy .lead{color:var(--ink);font-size:18px;font-weight:500}
+  .biz-list{display:grid;gap:0;list-style:none;margin:0;padding:0;border-top:2px solid var(--navy)}
+  .biz-list li{display:grid;grid-template-columns:44px 1fr;gap:18px;padding:20px 4px;border-bottom:1px solid var(--line);align-items:center}
+  .biz-list .ic{width:44px;height:44px;border-radius:50%;background:var(--navy);display:grid;place-items:center;color:#fff}
+  .biz-list .ic svg{width:22px;height:22px}
+  .biz-list b{display:block;font-family:"IBM Plex Sans KR",sans-serif;font-size:17px;font-weight:600}
+  .biz-list span{font-size:14px;color:var(--muted)}
+  @media (max-width:860px){.about-grid{grid-template-columns:1fr;gap:36px}}
+
+  /* 사업 분야 요약 */
+  .business{background:var(--sky)}
+  .biz-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .card{background:var(--paper);border-radius:16px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+  .card:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(14,59,33,.12)}
+  .card .thumb{aspect-ratio:4/3;background:var(--navy);position:relative;overflow:hidden}
+  .card .thumb::after{content:attr(data-label);position:absolute;left:14px;bottom:12px;font-size:12px;letter-spacing:.1em;color:rgba(255,255,255,.75);text-transform:uppercase}
+  .t1{background:linear-gradient(160deg,#2A8A4C,#0F3D22)}
+  .t2{background:linear-gradient(160deg,#0F3D22,#3FA34D)}
+  .t3{background:linear-gradient(160deg,#1E6B3A,#C5E86C 140%)}
+  .t4{background:linear-gradient(160deg,#0B2A16,#4E7A5C)}
+  .thumb .grid{position:absolute;inset:auto -10% -30% -10%;height:80%;transform:perspective(600px) rotateX(55deg);background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2264%22%20height%3D%2264%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20fill%3D%22%232E6C93%22/%3E%3Crect%20x%3D%222.5%22%20y%3D%222.5%22%20width%3D%2259%22%20height%3D%2259%22%20fill%3D%22%230F2F4C%22/%3E%3Cpath%20d%3D%22M4%2060L60%204%22%20stroke%3D%22%231C4A6E%22%20stroke-width%3D%221.2%22/%3E%3Cpath%20d%3D%22M4%2032L32%204M32%2060L60%2032%22%20stroke%3D%22%23173F60%22%20stroke-width%3D%221%22/%3E%3C/svg%3E") 0 0/36px 36px;border-top:3px solid #B9C7D1;opacity:.9}
+  .card .body{padding:22px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+  .card h3{font-size:19px;font-weight:600}
+  .card p{margin:0;font-size:14.5px;color:var(--muted);flex:1}
+  .card .go{font-size:14px;font-weight:600;color:var(--navy);display:inline-flex;align-items:center;gap:6px}
+  .card .go svg{width:14px;height:14px;transition:transform .2s}
+  .card:hover .go svg{transform:translateX(4px)}
+  @media (max-width:1000px){.biz-cards{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:520px){.biz-cards{grid-template-columns:1fr}}
+
+  /* 시공 실적 요약 */
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:44px}
+  .stat{padding:22px 0 0;border-top:2px solid var(--navy);color:var(--ink)}
+  .stat b{display:block;font-family:"IBM Plex Sans KR",sans-serif;font-size:52px;font-weight:600;letter-spacing:-.03em;font-variant-numeric:tabular-nums;line-height:1;color:var(--navy)}
+  .stat b i{font-style:normal;font-size:18px;color:var(--muted);margin-left:6px;font-weight:500}
+  .stat span{display:block;margin-top:10px;font-size:14px;color:var(--muted)}
+  .cases{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .case{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/3;color:#fff;display:flex;align-items:flex-end;padding:22px}
+  .case::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,59,33,0) 30%,rgba(14,59,33,.92) 100%)}
+  .case::after{content:"현장 사진 자리";position:absolute;top:14px;left:16px;font-size:11px;letter-spacing:.08em;color:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.3);padding:3px 8px;border-radius:999px}
+  .case.t1,.case.t2{background-image:linear-gradient(180deg,rgba(14,59,33,.55),rgba(14,59,33,.55)),url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2264%22%20height%3D%2264%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20fill%3D%22%232E6C93%22/%3E%3Crect%20x%3D%222.5%22%20y%3D%222.5%22%20width%3D%2259%22%20height%3D%2259%22%20fill%3D%22%230F2F4C%22/%3E%3Cpath%20d%3D%22M4%2060L60%204%22%20stroke%3D%22%231C4A6E%22%20stroke-width%3D%221.2%22/%3E%3Cpath%20d%3D%22M4%2032L32%204M32%2060L60%2032%22%20stroke%3D%22%23173F60%22%20stroke-width%3D%221%22/%3E%3C/svg%3E");background-size:auto,48px 48px}
+  .case>div{position:relative}
+  .case .tag{display:inline-block;padding:3px 10px;border-radius:999px;background:var(--sun);color:#0B2A12;font-size:12px;font-weight:700;margin-bottom:10px}
+  .case h3{font-size:19px;font-weight:600}
+  .case small{display:block;margin-top:4px;font-size:13px;color:rgba(255,255,255,.75)}
+  @media (max-width:900px){.stats{grid-template-columns:1fr}.cases{grid-template-columns:1fr}}
+
+  /* 문의 안내 */
+  .contact{background:var(--navy-deep);color:#fff;position:relative;overflow:hidden}
+  .contact::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(140,198,63,.45),transparent 65%)}
+  .contact .wrap{position:relative;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+  .contact h2{font-size:clamp(26px,3.4vw,40px);letter-spacing:-.02em}
+  .contact p{color:rgba(255,255,255,.75);margin:16px 0 0;max-width:46ch}
+  .contact-box{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:18px;padding:28px}
+  .contact-box dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 18px;font-size:15px}
+  .contact-box dt{color:rgba(255,255,255,.6)}
+  .contact-box dd{margin:0;font-weight:500}
+  .contact-box .btn{margin-top:22px;width:100%;justify-content:center}
+  @media (max-width:860px){.contact .wrap{grid-template-columns:1fr}}
+
+  /* ───── Footer ───── */
+  footer{background:var(--sky);border-top:1px solid var(--line);padding-block:44px 36px;font-size:14px;color:var(--muted)}
+  footer .wrap{display:grid;grid-template-columns:1fr auto;gap:28px}
+  footer .logo{color:var(--ink);font-size:18px;margin-bottom:14px}
+  footer .info{display:flex;flex-wrap:wrap;gap:6px 18px;max-width:70ch}
+  footer .info span b{color:var(--ink);font-weight:500;margin-right:4px}
+  footer nav{display:flex;gap:18px;align-self:start}
+  footer nav a:hover{color:var(--navy)}
+  footer .copy{margin-top:18px;font-size:13px}
+  @media (max-width:720px){footer .wrap{grid-template-columns:1fr}}
+
+  /* 우측 플로팅 상담 위젯 */
+  .float{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:40;width:104px;border-radius:14px 0 0 14px;overflow:hidden;box-shadow:0 12px 30px rgba(14,59,33,.25);font-family:"IBM Plex Sans KR",sans-serif}
+  .float a{display:block;text-align:center;padding:14px 8px;font-weight:700;line-height:1.3}
+  .float .f1{background:var(--navy);color:#fff;font-size:13px}
+  .float a br{display:none}
+  @media (max-width:960px){.float a br{display:inline}}
+  .float .f2{background:#fff;color:var(--navy);font-size:13px;white-space:nowrap;padding-inline:4px;letter-spacing:-.01em;border-block:1px solid var(--line)}
+  .float .f2 small{display:block;font-size:11px;color:var(--muted);font-weight:500}
+  .float .f3{background:#FEE500;color:#3C1E1E;font-size:13px}
+  @media (max-width:960px){
+    .float{top:auto;bottom:0;transform:none;width:100%;border-radius:0;display:grid;grid-template-columns:1fr 1fr 1fr}
+    .float a{padding:12px 6px;font-size:14px}
+    .float .f2{border-block:0;border-inline:1px solid var(--line)}
+    footer{padding-bottom:110px}
+  }
+  @media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+
+  /* ───── 서브페이지 공통 ───── */
+  .site-header.sub-page{position:sticky;background:var(--paper);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+  .page-hero{background:var(--navy-deep);color:#fff;position:relative;overflow:hidden;padding:clamp(56px,8vw,96px) 0}
+  .page-hero .wm{position:absolute;right:-.04em;bottom:-.2em;font-family:"IBM Plex Sans KR",sans-serif;font-style:italic;font-weight:600;font-size:clamp(70px,12vw,180px);letter-spacing:-.04em;line-height:1;color:rgba(255,255,255,.045);white-space:nowrap;pointer-events:none}
+  .page-hero .wrap{position:relative}
+  .crumb{font-size:13px;color:rgba(255,255,255,.6);margin-bottom:18px;display:flex;gap:8px}
+  .crumb a:hover{color:#fff}
+  .page-hero h1{font-size:clamp(32px,4.6vw,52px);font-weight:700;letter-spacing:-.03em}
+  .page-hero p{margin:14px 0 0;font-size:clamp(15px,1.4vw,18px);color:rgba(255,255,255,.8);max-width:40ch}
+  .greet{padding-block:clamp(64px,8vw,104px)}
+  .greet .wrap{display:grid;grid-template-columns:minmax(260px,380px) 1fr;gap:clamp(36px,6vw,88px);align-items:start}
+  .portrait{position:sticky;top:calc(var(--nav-h) + 24px);aspect-ratio:3/4;border-radius:6px;background:linear-gradient(160deg,var(--sky-2),var(--sky));border:1px solid var(--line);display:grid;place-items:center;color:var(--muted);font-size:13px;letter-spacing:.06em;text-align:center;padding:20px}
+  .portrait b{display:block;font-size:15px;color:var(--ink);margin-bottom:6px;font-family:"IBM Plex Sans KR",sans-serif}
+  .portrait .cap{margin-top:18px;font-size:14px;letter-spacing:0;color:var(--ink);text-align:left;width:100%}
+  .portrait .cap b{display:inline;font-size:16px}
+  .letter{max-width:62ch;font-size:17px;line-height:1.95}
+  .letter .open{font-family:"IBM Plex Sans KR",sans-serif;font-size:clamp(22px,2.6vw,30px);font-weight:600;line-height:1.4;letter-spacing:-.02em;margin:0 0 28px;color:var(--navy)}
+  .letter p{margin:0 0 22px}
+  .letter .pull{border-left:3px solid var(--sun);padding:6px 0 6px 20px;font-family:"IBM Plex Sans KR",sans-serif;font-size:19px;font-weight:600;color:var(--ink);margin:30px 0}
+  .sign{margin-top:40px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+  .sign small{display:block;font-size:13px;color:var(--muted);margin-bottom:4px}
+  .sign b{font-family:"IBM Plex Sans KR",sans-serif;font-size:20px;font-weight:600}
+  .sign .stamp{font-family:"IBM Plex Sans KR",sans-serif;font-style:italic;font-weight:600;color:var(--sun);letter-spacing:.02em}
+  .next{background:var(--sky);padding-block:48px}
+  .next .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+  .next p{margin:0;color:var(--muted)}
+  .next b{display:block;font-family:"IBM Plex Sans KR",sans-serif;font-size:20px;color:var(--ink);font-weight:600;margin-bottom:4px}
+  @media (max-width:860px){.greet .wrap{grid-template-columns:1fr}.portrait{position:static;max-width:320px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#top">본문 바로가기</a>
+<header class="site-header sub-page solid" id="header">
+  <div class="wrap">
+    <a class="logo" href="../../" aria-label="정수 E&G 홈">
+      <!-- TODO: 명함 로고 원본(ai/png) 받으면 교체 --><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 3c-8 0-14 6-14 14 0 3 1 5.5 2.5 7.5C8 19 12 15 18 13c-3 4-4 8-3.5 12C22 25 29 19 30 10c-2.5-4-7-7-12-7z" fill="#1E7A3C"/><path d="M19 19c-4 3-6 7-6 12 1 1 3 2 5 2 7 0 13-5 14-12-4 1-9 0-13-2z" fill="#7CC242"/></svg>
+      <span>정수 E&amp;G<small>energy &amp; green</small></span>
+    </a>
+
+    <ul class="gnb" role="menubar">
+      <li><a href="../../about/greeting/">회사 소개</a>
+        <ul class="sub">
+          <li><a href="../../about/greeting/">인사말</a></li>
+          <li><a href="../../about/mission/">회사 미션 · 업종 및 분야</a></li>
+          <li><a href="../../about/history/">회사 연혁</a></li>
+          <li><a href="../../about/location/">주소 및 오시는 길</a></li>
+        </ul>
+      </li>
+      <li><a href="../../business/">사업 분야</a>
+        <ul class="sub">
+          <li><a href="../../business/roof/">지붕 임대 사업</a></li>
+          <li><a href="../../business/plant/">발전소 · 시설 구축 사업</a></li>
+          <li><a href="../../business/consulting/">신재생에너지 컨설팅</a></li>
+          <li><a href="../../business/ess/">ESS 사업</a></li>
+        </ul>
+      </li>
+      <li><a href="../../product/">제품</a>
+        <ul class="sub">
+          <li><a href="../../product/solar/">태양광 (모듈 · 인버터)</a></li>
+          <li><a href="../../product/ess/">ESS (배터리 · PCS)</a></li>
+          <li><a href="../../product/etc/">기타</a></li>
+        </ul>
+      </li>
+      <li><a href="../../portfolio/">시공 실적 및 사례</a>
+        <ul class="sub">
+          <li><a href="../../portfolio/">시공 실적</a></li>
+          <li><a href="../../portfolio/case/">시공 사례</a></li>
+          <li><a href="../../portfolio/etc/">기타</a></li>
+        </ul>
+      </li>
+      <li><a href="../../support/contact/">고객지원</a>
+        <ul class="sub">
+          <li><a href="../../support/contact/">상담 · 실사 및 견적 신청</a></li>
+          <li><a href="../../support/faq/">자주 묻는 질문</a></li>
+          <li><a href="../../support/news/">기업 뉴스 · 홍보자료</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="nav-right">
+      <a class="cta-nav" href="../../support/contact/">무료 현장 실사 신청</a>
+      <button class="burger" id="burger" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mnav" id="mnav" aria-label="모바일 메뉴">
+  <div class="wrap">
+    <div class="macc">
+      <button type="button" aria-expanded="false">회사 소개<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l5 5 5-5"/></svg></button>
+      <ul>
+        <li><a href="../../about/greeting/">인사말</a></li>
+        <li><a href="../../about/mission/">회사 미션 · 업종 및 분야</a></li>
+        <li><a href="../../about/history/">회사 연혁</a></li>
+        <li><a href="../../about/location/">주소 및 오시는 길</a></li>
+      </ul>
+    </div>
+    <div class="macc">
+      <button type="button" aria-expanded="false">사업 분야<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l5 5 5-5"/></svg></button>
+      <ul>
+        <li><a href="../../business/roof/">지붕 임대 사업</a></li>
+        <li><a href="../../business/plant/">발전소 · 시설 구축 사업</a></li>
+        <li><a href="../../business/consulting/">신재생에너지 컨설팅</a></li>
+        <li><a href="../../business/ess/">ESS 사업</a></li>
+      </ul>
+    </div>
+    <div class="macc">
+      <button type="button" aria-expanded="false">제품<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l5 5 5-5"/></svg></button>
+      <ul>
+        <li><a href="../../product/solar/">태양광 (모듈 · 인버터)</a></li>
+        <li><a href="../../product/ess/">ESS (배터리 · PCS)</a></li>
+        <li><a href="../../product/etc/">기타</a></li>
+      </ul>
+    </div>
+    <div class="macc">
+      <button type="button" aria-expanded="false">시공 실적 및 사례<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l5 5 5-5"/></svg></button>
+      <ul>
+        <li><a href="../../portfolio/">시공 실적</a></li>
+        <li><a href="../../portfolio/case/">시공 사례</a></li>
+        <li><a href="../../portfolio/etc/">기타</a></li>
+      </ul>
+    </div>
+    <div class="macc">
+      <button type="button" aria-expanded="false">고객지원<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l5 5 5-5"/></svg></button>
+      <ul>
+        <li><a href="../../support/contact/">상담 · 실사 및 견적 신청</a></li>
+        <li><a href="../../support/faq/">자주 묻는 질문</a></li>
+        <li><a href="../../support/news/">기업 뉴스 · 홍보자료</a></li>
+      </ul>
+    </div>
+    <a class="m-cta" href="../../support/contact/">무료 현장 실사 신청</a>
+    <div class="m-tel">대표전화 <b>061-793-6005</b></div>
+  </div>
+</nav>
+
+
+<main id="top">
+  <section class="page-hero">
+    <div class="wm" aria-hidden="true">energy &amp; green</div>
+    <div class="wrap">
+      <div class="crumb"><a href="../../">홈</a><span>/</span><span>회사 소개</span><span>/</span><span>인사말</span></div>
+      <h1>인사말</h1>
+      <p>놀고 있던 공장 지붕에서 시작해, 설치가 아니라 20년의 운영을 약속합니다.</p>
+    </div>
+  </section>
+
+  <section class="greet">
+    <div class="wrap">
+      <aside class="portrait">
+        <div><b>대표 사진 자리</b>세로형 반신 · 밝은 배경<br>3:4 비율 권장</div>
+        <!-- TODO: <img src="../../img/ceo.jpg" alt="정수 E&G 대표 김창성"> 로 교체 -->
+      </aside>
+      <article class="letter">
+        <p class="open">안녕하십니까.<br>정수 E&amp;G 대표 김창성입니다.</p>
+        <p>정수 E&amp;G는 2020년 전남 광양에서 태양광 발전소를 만들기 위해 설립되었습니다. 신재생에너지 가운데 가장 적은 투자로 가장 큰 효과를 낼 수 있는 것이 태양광이라는 판단에서였습니다. 첫 모토는 단순했습니다. 놀고 있는 공장 지붕을 임대해 그 위에 태양광을 올리는 것. 당시 전남은 발전소는 많았지만 공장 지붕 활용은 가장 뒤처져 있었고, 저희는 그 빈 지붕에서 시작했습니다.</p>
+        <p>지금 광양과 여수의 산단 지붕은 대부분 채워졌고, 저희 현장은 광양을 넘어 전국으로 넓어졌습니다. 그 사이 이 지역은 태양광이 늘어난 만큼 한전 송전선로가 부족해졌습니다. 발전한 전기를 저장했다가 선로에 여유가 있을 때 보내는 ESS를 함께 하게 된 이유입니다. 고흥 발전소는 태양광 「4MW」와 ESS를 한 자리에서 운영하고 있습니다.</p>
+        <div class="pull">태양광은 설치로 끝나는 사업이 아닙니다. 한 번 올린 설비는 20년 넘게 같은 자리에서 돌아가야 합니다.</div>
+        <p>저희가 사업성 검토와 정부 지원사업 신청부터 발전소 구축, 준공 후 안전·유지관리까지 직접 맡는 이유도 여기에 있습니다.</p>
+        <p>에너지와 녹색, energy &amp; green. 저희 이름에 담긴 두 단어를 지붕 한 칸, 부지 한 필지에서 실제로 만들어 가겠습니다.</p>
+        <p>감사합니다.</p>
+        <div class="sign">
+          <div><small>정수 E&amp;G 대표</small><b>김 창 성</b></div>
+          <div class="stamp">energy &amp; green</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="next">
+    <div class="wrap">
+      <p><b>저희가 해온 현장을 보시겠습니까?</b>산업용 지붕 · 태양광+ESS 연계 · 가정용 사례</p>
+      <a class="btn btn-line" href="../../portfolio/">시공 실적 및 사례 보기</a>
+    </div>
+  </section>
+
+  <section class="block contact" id="contact">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Contact</div>
+        <h2>접수 후 「24시간」 이내,<br>전문 엔지니어가 직접 안내드립니다.</h2>
+        <p>지붕 임대 · 자가소비형 발전소 · 공공기관 및 컨설팅 · 기타 문의. 무료 현장 실사는 저희가 직접 방문드립니다.</p>
+      </div>
+      <div class="contact-box">
+        <dl>
+          <dt>대표전화</dt><dd><a href="tel:0617936005">061-793-6005</a></dd>
+          <dt>팩스</dt><dd>061-793-7005</dd>
+          <dt>이메일</dt><dd><a href="mailto:5000220@daum.net">5000220@daum.net</a></dd>
+          <dt>업무시간</dt><dd>평일 09:00 – 18:00</dd>
+        </dl>
+        <a class="btn btn-sun" href="../../support/contact/">무료 현장 실사 신청</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="logo"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 3c-8 0-14 6-14 14 0 3 1 5.5 2.5 7.5C8 19 12 15 18 13c-3 4-4 8-3.5 12C22 25 29 19 30 10c-2.5-4-7-7-12-7z" fill="#1E7A3C"/><path d="M19 19c-4 3-6 7-6 12 1 1 3 2 5 2 7 0 13-5 14-12-4 1-9 0-13-2z" fill="#7CC242"/></svg><span>정수 E&amp;G<small>energy &amp; green</small></span></div>
+      <div class="info">
+        <span><b>상호명</b>정수 E&amp;G</span>
+        <span><b>대표자</b>김창성</span>
+        <span><b>사업자등록번호</b>「000-00-00000」</span>
+        <span><b>주소</b>전남 광양시 항만3로 20, 102호 (황길동)</span>
+        <span><b>대표전화</b>061-793-6005</span>
+        <span><b>팩스</b>061-793-7005</span>
+        <span><b>이메일</b>5000220@daum.net</span>
+      </div>
+      <div class="copy">© 정수 E&amp;G. All rights reserved.</div>
+    </div>
+    <nav><a href="../../privacy/">개인정보처리방침</a><a href="../../about/location/">오시는 길</a><a href="../../support/news/">홍보자료</a></nav>
+  </div>
+</footer>
+
+<div class="float" aria-label="빠른 상담">
+  <a class="f1" href="../../support/contact/">무료 실사<br>신청</a>
+  <a class="f2" href="tel:0617936005"><small>대표전화</small>061-793-6005</a>
+  <a class="f3" href="https://pf.kakao.com/" target="_blank" rel="noopener">카카오톡<br>상담</a><!-- TODO: 카카오 채널 URL로 교체 -->
+</div>
+
+<script>
+(function(){
+  var header=document.getElementById('header'),burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
+  function onScroll(){ header.classList.add('solid'); }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  burger.addEventListener('click',function(){
+    var open=!mnav.classList.contains('open');
+    mnav.classList.toggle('open',open); header.classList.toggle('open',open);
+    burger.setAttribute('aria-expanded',open); burger.setAttribute('aria-label',open?'메뉴 닫기':'메뉴 열기');
+    document.body.style.overflow=open?'hidden':''; if(!open) onScroll();
+  });
+  document.querySelectorAll('.macc>button').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var item=btn.parentElement,open=!item.classList.contains('open');
+      document.querySelectorAll('.macc.open').forEach(function(o){o.classList.remove('open');o.querySelector('button').setAttribute('aria-expanded','false');});
+      item.classList.toggle('open',open); btn.setAttribute('aria-expanded',open);
+    });
+  });
+  window.addEventListener('resize',function(){ if(window.innerWidth>960 && mnav.classList.contains('open')) burger.click(); });
+  // 데스크톱 드롭다운: 키보드 접근 시 하위 메뉴 유지, 터치 시 첫 탭은 펼치기
+  document.addEventListener('touchstart',function(e){ if(!e.target.closest('.gnb')) document.querySelectorAll('.gnb>li.touched').forEach(function(o){o.classList.remove('touched');o.querySelector('.sub').style.cssText='';}); },{passive:true});
+  document.querySelectorAll('.gnb>li>a').forEach(function(a){
+    a.addEventListener('touchstart',function(e){
+      var li=a.parentElement; if(!li.classList.contains('touched')){ e.preventDefault(); document.querySelectorAll('.gnb>li.touched').forEach(function(o){o.classList.remove('touched')}); li.classList.add('touched'); li.querySelector('.sub').style.cssText='opacity:1;visibility:visible;transform:translate(-50%,0)'; }
+    },{passive:false});
+  });
+})();
+</script>
+</body>
+</html>
