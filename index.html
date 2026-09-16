@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="assets/site.css">
 </head>
-<body>
+<body class="home">
 
 <a class="skip" href="#top">본문 바로가기</a>
 <header class="site-header" id="header">
@@ -26,7 +26,8 @@
       <li><a href="about/greeting/">회사 소개</a>
         <ul class="sub">
           <li><a href="about/greeting/">인사말</a></li>
-          <li><a href="about/mission/">회사 미션 · 업종 및 분야</a></li>
+          <li><a href="about/mission/">미션과 핵심 가치</a></li>
+        <li><a href="about/overview/">사업 개요 및 분야</a></li>
           <li><a href="about/history/">회사 연혁</a></li>
           <li><a href="about/location/">주소 및 오시는 길</a></li>
         </ul>
@@ -53,17 +54,18 @@
           <li><a href="portfolio/etc/">기타</a></li>
         </ul>
       </li>
-      <li><a href="support/contact/">고객지원</a>
+      <li><a href="support/consult/">고객지원</a>
         <ul class="sub">
-          <li><a href="support/contact/">상담 · 실사 및 견적 신청</a></li>
+          <li><a href="support/consult/">고객 상담</a></li>
+        <li><a href="support/estimate/">실사 및 견적 신청</a></li>
           <li><a href="support/faq/">자주 묻는 질문</a></li>
-          <li><a href="support/news/">기업 뉴스 · 홍보자료</a></li>
+          <li><a href="support/news/">뉴스 · 홍보자료</a></li>
         </ul>
       </li>
     </ul>
 
     <div class="nav-right">
-      <a class="cta-nav" href="support/contact/">무료 현장 실사 신청</a>
+      <a class="cta-nav" href="support/estimate/">무료 현장 실사 신청</a>
       <button class="burger" id="burger" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -75,7 +77,8 @@
       <button type="button" aria-expanded="false">회사 소개<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l5 5 5-5"/></svg></button>
       <ul>
         <li><a href="about/greeting/">인사말</a></li>
-        <li><a href="about/mission/">회사 미션 · 업종 및 분야</a></li>
+        <li><a href="about/mission/">미션과 핵심 가치</a></li>
+        <li><a href="about/overview/">사업 개요 및 분야</a></li>
         <li><a href="about/history/">회사 연혁</a></li>
         <li><a href="about/location/">주소 및 오시는 길</a></li>
       </ul>
@@ -108,12 +111,13 @@
     <div class="macc">
       <button type="button" aria-expanded="false">고객지원<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l5 5 5-5"/></svg></button>
       <ul>
-        <li><a href="support/contact/">상담 · 실사 및 견적 신청</a></li>
+        <li><a href="support/consult/">고객 상담</a></li>
+        <li><a href="support/estimate/">실사 및 견적 신청</a></li>
         <li><a href="support/faq/">자주 묻는 질문</a></li>
-        <li><a href="support/news/">기업 뉴스 · 홍보자료</a></li>
+        <li><a href="support/news/">뉴스 · 홍보자료</a></li>
       </ul>
     </div>
-    <a class="m-cta" href="support/contact/">무료 현장 실사 신청</a>
+    <a class="m-cta" href="support/estimate/">무료 현장 실사 신청</a>
     <div class="m-tel">대표전화 <b>061-793-6005</b></div>
   </div>
 </nav>
@@ -140,84 +144,10 @@
   <div class="inquiry-strip">
     <div class="wrap">
       <strong>지붕 한 칸부터 계산해 드립니다.<small>지붕 상태 · 일사량 · 계통 연계 여부를 먼저 확인하는 무료 현장 실사</small></strong>
-      <a class="btn btn-dark" href="support/contact/">무료 현장 실사 신청 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      <a class="btn btn-dark" href="support/estimate/">무료 현장 실사 신청 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
     </div>
   </div>
 
-  <!-- 회사 소개 요약 -->
-  <section class="block about" id="about">
-    <div class="wrap about-grid">
-      <div class="about-copy">
-        <div class="eyebrow">About us</div>
-        <h2>비어 있는 공간을<br>발전소로.</h2>
-        <p class="lead">정수 E&amp;G는 2020년 전남 광양에서 공장 지붕 임대 태양광으로 시작해, 태양광 발전소 구축과 ESS를 함께 하는 신재생에너지 기업입니다.</p>
-        <p>비어 있는 공장 지붕과 유휴 부지를 발전소로 바꾸고, 설치로 끝내지 않고 20년의 운영까지 함께합니다. 사업성 검토와 정부 지원사업 신청부터 발전소 구축, 준공 후 안전·유지관리까지 한 회사가 책임집니다.</p>
-        <p style="margin-top:28px"><a class="btn btn-line" href="about/greeting/">회사 소개 보기</a></p>
-      </div>
-      <ul class="biz-list">
-        <li><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="11" rx="1"/><path d="M3 12h18M9 7v11M15 7v11"/></svg></div><div><b>태양광</b><span>태양광 발전 설계 및 시공</span></div></li>
-        <li><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M12 8l-2 4h4l-2 4"/></svg></div><div><b>ESS</b><span>태양광 연계 에너지저장장치 구축 · 설치</span></div></li>
-        <li><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7v9H3z"/><path d="M6 11h12"/></svg></div><div><b>지붕 임대</b><span>유휴 지붕 공간을 활용한 태양광 사업</span></div></li>
-        <li><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 13l3 3 5-7"/></svg></div><div><b>신재생에너지 컨설팅</b><span>정부 지원사업 · 사업성 검토 · 인허가</span></div></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- 사업 분야 요약 -->
-  <section class="block business" id="business">
-    <div class="wrap">
-      <div class="sec-head">
-        <div><div class="eyebrow">Business</div><h2>사업 분야</h2><p>계산이 먼저입니다. 되지 않는 현장은 되지 않는다고 말씀드리고, 되는 현장은 설계에서 20년 운영까지 끝까지 책임집니다.</p></div>
-        <a class="more" href="business/">사업 분야 전체 보기 →</a>
-      </div>
-      <div class="biz-cards">
-        <a class="card" href="business/roof/"><div class="thumb t1" data-label="Roof Lease"><div class="grid"></div></div><div class="body"><h3>지붕 임대 사업</h3><p>쓰이지 않던 공장·창고 지붕이 매달 임대료를 만듭니다. 설치와 운영은 정수 E&amp;G가 맡고, 건물주는 임대료를 받는 구조입니다.</p><span class="go">자세히 보기 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div></a>
-        <a class="card" href="business/plant/"><div class="thumb t2" data-label="EPC"><div class="grid"></div></div><div class="body"><h3>발전소 · 시설 구축 사업</h3><p>태양광 발전소 구축부터 준공 후 안전·유지관리까지. 광양에서 시작해 전국 현장을 협력사와 함께 수행합니다.</p><span class="go">자세히 보기 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div></a>
-        <a class="card" href="business/consulting/"><div class="thumb t3" data-label="Consulting"><div class="grid"></div></div><div class="body"><h3>신재생에너지 컨설팅</h3><p>태양광 정부 지원사업 신청, 사업성 검토, 발전사업 인허가 대행까지 실무 컨설팅.</p><span class="go">자세히 보기 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div></a>
-        <a class="card" href="business/ess/"><div class="thumb t4" data-label="ESS"><div class="grid"></div></div><div class="body"><h3>ESS 사업</h3><p>송전선로 여유가 없는 지역에서 발전 전력을 저장했다가 보내는 컨테이너형 ESS. 태양광 발전소와 연계 구축합니다.</p><span class="go">자세히 보기 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 시공 실적 요약 -->
-  <section class="block" id="portfolio">
-    <div class="wrap">
-      <div class="sec-head">
-        <div><div class="eyebrow">Portfolio</div><h2>시공 실적 및 사례</h2><p>산업용 · 가정용 · 공공기관 현장의 실제 시공 사진과 프로젝트 정보를 확인하실 수 있습니다.</p></div>
-        <a class="more" href="portfolio/">시공 실적 전체 보기 →</a>
-      </div>
-      <div class="stats">
-        <div class="stat"><b>「000」<i>건</i></b><span>누적 시공 실적</span></div>
-        <div class="stat"><b>「00」<i>MW</i></b><span>누적 시공 용량</span></div>
-        <div class="stat"><b>2020<i>년</i></b><span>설립 · 광양 경제자유구역 소재</span></div>
-      </div>
-      <div class="cases">
-        <a class="case t1" href="portfolio/case/"><div><span class="tag">산업용</span><h3>「공장명」 지붕 태양광</h3><small>「시·군」 · 「000」kW · 「0000.00」 준공</small></div></a>
-        <a class="case t2" href="portfolio/case/"><div><span class="tag">태양광 + ESS</span><h3>고흥 태양광 발전소 · ESS 연계</h3><small>전남 고흥 · 태양광 4MW + ESS 「2.5」MW · 「0000.00」 준공</small></div></a>
-        <a class="case t4" href="portfolio/case/"><div><span class="tag">가정용</span><h3>「주택 / 시설명」 자가소비형</h3><small>「시·군」 · 「00」kW · 「0000.00」 준공</small></div></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 문의 안내 (전 페이지 하단 공통) -->
-  <section class="block contact" id="contact">
-    <div class="wrap">
-      <div>
-        <div class="eyebrow">Contact</div>
-        <h2>접수 후 「24시간」 이내,<br>전문 엔지니어가 직접 안내드립니다.</h2>
-        <p>지붕 임대 · 자가소비형 발전소 · 공공기관 및 컨설팅 · 기타 문의. 도면이나 전기요금 고지서를 함께 보내주시면 더 정확한 분석이 가능합니다. 무료 현장 실사는 저희가 직접 방문드립니다.</p>
-      </div>
-      <div class="contact-box">
-        <dl>
-          <dt>대표전화</dt><dd><a href="tel:0617936005">061-793-6005</a></dd>
-          <dt>팩스</dt><dd>061-793-7005</dd>
-          <dt>이메일</dt><dd><a href="mailto:5000220@daum.net">5000220@daum.net</a></dd>
-          <dt>업무시간</dt><dd>평일 09:00 – 18:00</dd>
-        </dl>
-        <a class="btn btn-sun" href="support/contact/">무료 현장 실사 신청</a>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer>
@@ -240,7 +170,7 @@
 </footer>
 
 <div class="float" aria-label="빠른 상담">
-  <a class="f1" href="support/contact/">무료 실사<br>신청</a>
+  <a class="f1" href="support/estimate/">무료 실사<br>신청</a>
   <a class="f2" href="tel:0617936005"><small>대표전화</small>061-793-6005</a>
   <a class="f3" href="https://pf.kakao.com/" target="_blank" rel="noopener">카카오톡<br>상담</a><!-- TODO: 카카오 채널 URL로 교체 -->
 </div>

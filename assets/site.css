@@ -375,3 +375,30 @@
   .map code{font-size:12px;background:rgba(255,255,255,.7);padding:2px 6px;border-radius:4px}
   .legal h2{font-size:18px;font-weight:600;margin:32px 0 10px}
   .legal p,.legal li{font-size:15px;color:var(--ink);line-height:1.8}
+
+/* v2 */
+/* 메인: 첫 화면 한 장 */
+.home .hero{min-height:calc(100svh - 82px)}
+.home footer{margin-top:0}
+/* 핵심 가치 4열 */
+.vals-4{grid-template-columns:repeat(4,1fr)}
+@media (max-width:1000px){.vals-4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.vals-4{grid-template-columns:1fr}}
+/* 제품 공통 안내 */
+.pintro-sec{padding-bottom:0}
+.pintro{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--navy)}
+.pintro li{padding:26px 24px 24px 0;border-bottom:1px solid var(--line)}
+.pintro li+li{padding-left:24px;border-left:1px solid var(--line)}
+.pintro i{display:block;font-style:normal;font-family:"IBM Plex Sans KR",sans-serif;font-size:13px;letter-spacing:.12em;color:var(--sun-deep);font-weight:600;margin-bottom:10px}
+.pintro b{display:block;font-family:"IBM Plex Sans KR",sans-serif;font-size:18px;font-weight:600;margin-bottom:8px}
+.pintro p{margin:0;font-size:15px;color:var(--muted);line-height:1.75}
+.pintro-cta{margin:24px 0 0}
+@media (max-width:860px){.pintro{grid-template-columns:1fr}.pintro li,.pintro li+li{padding:22px 0;border-left:0}}
+/* 시공 사례 상세 */
+.case-head{display:flex;gap:10px;align-items:center;margin-bottom:12px}
+.case-no{font-family:"IBM Plex Sans KR",sans-serif;font-size:13px;letter-spacing:.14em;font-weight:600;color:var(--sun-deep)}
+.case-head .tag{display:inline-block;padding:2px 10px;border-radius:999px;background:var(--sky-2);color:var(--navy);font-size:12px;font-weight:600}
+.case-story h3{font-size:17px;font-weight:600;color:var(--navy);margin:0 0 6px}
+.case-story p{margin:0 0 20px}
+.case-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}
+@media (max-width:700px){.case-photos{grid-template-columns:1fr}}
