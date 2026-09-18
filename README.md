@@ -12,4 +12,8 @@
 
 ## 채워야 할 것
 
-`「 」`로 표시된 값은 대표 확인 후 기재. 사진은 `.hero .bg`, `.card .thumb`, `.case`에 `background-image`로 넣는다. 사진이 들어오면 `.case::after`(현장 사진 자리 표시)는 삭제.
+`「 」`로 표시된 값은 대표 확인 후 기재. 현장 사진은 `<figure class="ph">` 자리에 `<img>`로 넣는다 (`.ph img`가 `object-fit:cover` 처리).
+
+## 이미지 출처
+
+- `assets/hero-solar.jpg` — Unsplash (Unsplash License · 상업적 이용 가능, 출처 표기 의무 없음)

@@ -79,19 +79,21 @@
   .hero .bg{position:absolute;inset:0;background:
       linear-gradient(90deg,rgba(14,59,33,.85) 0%,rgba(14,59,33,.45) 55%,rgba(14,59,33,.15) 100%),
       linear-gradient(180deg,#1A6A3A 0%,#0F4A28 60%,#0A331B 100%)}
-  .hero .panel{position:absolute;right:-4%;bottom:-22%;width:72%;max-width:960px;aspect-ratio:16/10;transform:perspective(1400px) rotateX(56deg) rotateZ(-12deg);transform-origin:center;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2264%22%20height%3D%2264%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20fill%3D%22%232E6C93%22/%3E%3Crect%20x%3D%222.5%22%20y%3D%222.5%22%20width%3D%2259%22%20height%3D%2259%22%20fill%3D%22%230F2F4C%22/%3E%3Cpath%20d%3D%22M4%2060L60%204%22%20stroke%3D%22%231C4A6E%22%20stroke-width%3D%221.2%22/%3E%3Cpath%20d%3D%22M4%2032L32%204M32%2060L60%2032%22%20stroke%3D%22%23173F60%22%20stroke-width%3D%221%22/%3E%3C/svg%3E") 0 0/64px 64px;border:4px solid #B9C7D1;border-radius:4px;box-shadow:0 50px 90px rgba(0,0,0,.5), inset 0 0 0 1px rgba(255,255,255,.2)}
-  .hero .panel::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(255,255,255,.22) 0%,rgba(255,255,255,0) 35%,rgba(0,0,0,0) 60%,rgba(0,0,0,.35) 100%)}
-  .hero .wm{position:absolute;right:-.04em;bottom:-.18em;font-family:"IBM Plex Sans KR",sans-serif;font-style:italic;font-weight:600;font-size:clamp(80px,14vw,210px);letter-spacing:-.04em;line-height:1;color:rgba(255,255,255,.045);white-space:nowrap;pointer-events:none;user-select:none}
-  .hero .wrap{position:relative}
+  .hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(28px,4.5vw,64px);align-items:center}
+  .hero-shot{--r:4/3;margin:0;border:0;border-radius:16px;box-shadow:0 40px 80px rgba(0,0,0,.45)}
+  .hero-shot .wm{position:absolute;left:0;right:0;bottom:7%;z-index:2;text-align:center;font-family:"IBM Plex Sans KR",sans-serif;font-style:italic;font-weight:600;font-size:clamp(26px,3.6vw,54px);letter-spacing:-.03em;line-height:1;color:rgba(255,255,255,.3);text-shadow:0 2px 24px rgba(0,0,0,.35);filter:blur(1px);pointer-events:none;user-select:none}
+  @media (max-width:960px){.hero .wrap{grid-template-columns:1fr}}
   .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--navy);margin-bottom:22px}
   .eyebrow::before{content:"";width:28px;height:2px;background:currentColor;opacity:.6}
   .hero .eyebrow,.contact .eyebrow{color:var(--sun)}
+  .hero .eyebrow{font-size:clamp(17px,2.1vw,22px);letter-spacing:.04em;margin-bottom:18px}
+  .hero .eyebrow::before{width:36px}
   .hero h1{font-size:clamp(36px,5.8vw,68px);font-weight:700;letter-spacing:-.03em;max-width:14ch}
   .hero h1 em{font-style:normal;color:var(--sun)}
   .hero p{font-size:clamp(16px,1.6vw,20px);max-width:32ch;margin:22px 0 0;color:rgba(255,255,255,.85)}
   .hero-stats{display:flex;gap:40px;margin-top:48px;flex-wrap:wrap}
   .hero-stats div{border-left:2px solid rgba(255,255,255,.25);padding-left:14px}
-  .hero-stats b{display:block;font-family:"IBM Plex Sans KR",sans-serif;font-size:28px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.1}
+  .hero-stats b{display:block;font-family:"IBM Plex Sans KR",sans-serif;font-size:clamp(17px,1.8vw,20px);font-weight:600;font-variant-numeric:tabular-nums;line-height:1.1}
   .hero-stats span{font-size:13px;color:rgba(255,255,255,.7)}
 
   /* 문의하기 strip (메인 비주얼 바로 아래) */
