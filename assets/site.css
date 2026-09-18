@@ -82,6 +82,7 @@
   .hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(28px,4.5vw,64px);align-items:center}
   .hero-shot{--r:4/3;margin:0;border:0;border-radius:16px;box-shadow:0 40px 80px rgba(0,0,0,.45)}
   .hero-shot .wm{position:absolute;left:0;right:0;bottom:7%;z-index:2;text-align:center;font-family:"IBM Plex Sans KR",sans-serif;font-style:italic;font-weight:600;font-size:clamp(26px,3.6vw,54px);letter-spacing:-.03em;line-height:1;color:rgba(255,255,255,.3);text-shadow:0 2px 24px rgba(0,0,0,.35);filter:blur(1px);pointer-events:none;user-select:none}
+  @media (min-width:961px) and (max-width:1407px){.hero .wrap{padding-right:112px}}  /* 오른쪽 플로팅 상담바와 사진 겹침 방지 */
   @media (max-width:960px){.hero .wrap{grid-template-columns:1fr}}
   .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--navy);margin-bottom:22px}
   .eyebrow::before{content:"";width:28px;height:2px;background:currentColor;opacity:.6}
