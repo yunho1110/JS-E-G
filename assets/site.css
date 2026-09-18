@@ -66,6 +66,13 @@
   .macc ul li:last-child a{margin-bottom:18px}
   .mnav .m-cta{display:block;margin:28px 0 0;text-align:center;padding:15px;border-radius:12px;background:var(--sun);color:#0B2A12;font-weight:700;font-size:17px}
   .mnav .m-tel{display:flex;justify-content:center;gap:8px;margin-top:16px;color:var(--muted);font-size:14px}
+  .gnb>li>a,.logo span{white-space:nowrap}
+  @media (max-width:1120px){  /* 961~1120px: 메뉴가 두 줄로 깨지지 않도록 압축 */
+    .gnb{gap:0}
+    .gnb>li>a{padding:10px 12px;font-size:16px}
+    .cta-nav{padding:10px 16px;font-size:14px}
+    .site-header .wrap{gap:12px}
+  }
   @media (max-width:960px){
     :root{--nav-h:68px}
     .gnb,.cta-nav{display:none}
@@ -79,11 +86,15 @@
   .hero .bg{position:absolute;inset:0;background:
       linear-gradient(90deg,rgba(14,59,33,.85) 0%,rgba(14,59,33,.45) 55%,rgba(14,59,33,.15) 100%),
       linear-gradient(180deg,#1A6A3A 0%,#0F4A28 60%,#0A331B 100%)}
-  .hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(28px,4.5vw,64px);align-items:center}
-  .hero-shot{--r:4/3;margin:0;border:0;border-radius:16px;box-shadow:0 40px 80px rgba(0,0,0,.45)}
+  .hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);grid-template-areas:"copy shot" "stats shot";column-gap:clamp(24px,3.5vw,56px);row-gap:clamp(28px,3.5vw,44px);align-items:center}
+  .hero-copy{grid-area:copy;align-self:end}
+  .hero-stats{grid-area:stats;align-self:start}
+  .hero-shot{grid-area:shot}
+  .hero .hero-shot{--r:4/3;margin:0;border:0;border-radius:16px;box-shadow:0 40px 80px rgba(0,0,0,.45)}  /* .ph 기본 점선 테두리/라운드 덮어쓰기 */
   .hero-shot .wm{position:absolute;left:0;right:0;bottom:7%;z-index:2;text-align:center;font-family:"IBM Plex Sans KR",sans-serif;font-style:italic;font-weight:600;font-size:clamp(26px,3.6vw,54px);letter-spacing:-.03em;line-height:1;color:rgba(255,255,255,.3);text-shadow:0 2px 24px rgba(0,0,0,.35);filter:blur(1px);pointer-events:none;user-select:none}
   @media (min-width:961px) and (max-width:1407px){.hero .wrap{padding-right:112px}}  /* 오른쪽 플로팅 상담바와 사진 겹침 방지 */
-  @media (max-width:960px){.hero .wrap{grid-template-columns:1fr}}
+  @media (max-width:960px){.hero .wrap{grid-template-columns:1fr;grid-template-areas:"copy" "shot" "stats"}.hero-copy{align-self:auto}}
+  @media (max-width:640px){.hero{padding:calc(var(--nav-h) + 40px) 0 52px}.hero-shot{--r:16/9}}
   .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--navy);margin-bottom:22px}
   .eyebrow::before{content:"";width:28px;height:2px;background:currentColor;opacity:.6}
   .hero .eyebrow,.contact .eyebrow{color:var(--sun)}
@@ -92,7 +103,8 @@
   .hero h1{font-size:clamp(36px,5.8vw,68px);font-weight:700;letter-spacing:-.03em;max-width:14ch}
   .hero h1 em{font-style:normal;color:var(--sun)}
   .hero p{font-size:clamp(16px,1.6vw,20px);max-width:32ch;margin:22px 0 0;color:rgba(255,255,255,.85)}
-  .hero-stats{display:flex;gap:40px;margin-top:48px;flex-wrap:wrap}
+  .hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,2vw,32px)}
+  @media (max-width:560px){.hero-stats{grid-template-columns:1fr;gap:14px}}
   .hero-stats div{border-left:2px solid rgba(255,255,255,.25);padding-left:14px}
   .hero-stats b{display:block;font-family:"IBM Plex Sans KR",sans-serif;font-size:clamp(17px,1.8vw,20px);font-weight:600;font-variant-numeric:tabular-nums;line-height:1.1}
   .hero-stats span{font-size:13px;color:rgba(255,255,255,.7)}
@@ -381,7 +393,8 @@
 
 /* v2 */
 /* 메인: 첫 화면 한 장 */
-.home .hero{min-height:calc(100svh - 82px)}
+.home .hero{min-height:100svh}
+@media (max-width:960px){.home .hero{min-height:0}}
 .home footer{margin-top:0}
 /* 핵심 가치 4열 */
 .vals-4{grid-template-columns:repeat(4,1fr)}
