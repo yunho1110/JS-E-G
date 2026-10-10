@@ -3,12 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="정수 E&G (전남 광양) — 지붕 임대 태양광, 발전소·시설 구축, ESS, 신재생에너지 컨설팅. 사업성 검토부터 인허가·시공·20년 운영까지 한 회사가 책임집니다.">
+<meta name="description" content="정수 E&G (전남 광양) — 지붕 임대 태양광, 발전소·시설 구축, ESS, 신재생에너지 컨설팅. 사업성 검토부터 인허가·시공·지속 관리까지 한 회사가 함께합니다.">
 <meta property="og:title" content="정수 E&G | 깨끗한 에너지, 더 나은 미래">
 <meta property="og:description" content="지붕 임대 태양광 · 발전소 구축 · ESS · 신재생에너지 컨설팅">
 <meta property="og:type" content="website">
 <!-- TODO: og:image (1200×630 현장 사진), canonical URL -->
 <title>정수 E&G</title>
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0C5038">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="assets/site.css">
 </head>
@@ -18,11 +23,10 @@
 <header class="site-header" id="header">
   <div class="wrap">
     <a class="logo" href="./" aria-label="정수 E&G 홈">
-      <!-- TODO: 명함 로고 원본(ai/png) 받으면 교체 --><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 3c-8 0-14 6-14 14 0 3 1 5.5 2.5 7.5C8 19 12 15 18 13c-3 4-4 8-3.5 12C22 25 29 19 30 10c-2.5-4-7-7-12-7z" fill="#1E7A3C"/><path d="M19 19c-4 3-6 7-6 12 1 1 3 2 5 2 7 0 13-5 14-12-4 1-9 0-13-2z" fill="#7CC242"/></svg>
-      <span>정수 E&amp;G<small>energy &amp; green</small></span>
+      <svg class="logo-full" aria-hidden="true" focusable="false"><use href="assets/logo.svg#full"/></svg><span class="vh">정수 E&amp;G</span>
     </a>
 
-    <ul class="gnb" role="menubar">
+    <ul class="gnb">
       <li><a href="about/greeting/">회사 소개</a>
         <ul class="sub">
           <li><a href="about/greeting/">인사말</a></li>
@@ -74,7 +78,7 @@
 <nav class="mnav" id="mnav" aria-label="모바일 메뉴">
   <div class="wrap">
     <div class="macc">
-      <button type="button" aria-expanded="false">회사 소개<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l5 5 5-5"/></svg></button>
+      <button type="button" aria-expanded="false">회사 소개<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M5 8l5 5 5-5"/></svg></button>
       <ul>
         <li><a href="about/greeting/">인사말</a></li>
         <li><a href="about/mission/">미션과 핵심 가치</a></li>
@@ -84,7 +88,7 @@
       </ul>
     </div>
     <div class="macc">
-      <button type="button" aria-expanded="false">사업 분야<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l5 5 5-5"/></svg></button>
+      <button type="button" aria-expanded="false">사업 분야<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M5 8l5 5 5-5"/></svg></button>
       <ul>
         <li><a href="business/roof/">지붕 임대 사업</a></li>
         <li><a href="business/plant/">발전소 · 시설 구축 사업</a></li>
@@ -93,7 +97,7 @@
       </ul>
     </div>
     <div class="macc">
-      <button type="button" aria-expanded="false">제품<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l5 5 5-5"/></svg></button>
+      <button type="button" aria-expanded="false">제품<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M5 8l5 5 5-5"/></svg></button>
       <ul>
         <li><a href="product/solar/">태양광 (모듈 · 인버터)</a></li>
         <li><a href="product/ess/">ESS (배터리 · PCS)</a></li>
@@ -101,7 +105,7 @@
       </ul>
     </div>
     <div class="macc">
-      <button type="button" aria-expanded="false">시공 실적 및 사례<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l5 5 5-5"/></svg></button>
+      <button type="button" aria-expanded="false">시공 실적 및 사례<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M5 8l5 5 5-5"/></svg></button>
       <ul>
         <li><a href="portfolio/">시공 실적</a></li>
         <li><a href="portfolio/case/">시공 사례</a></li>
@@ -109,7 +113,7 @@
       </ul>
     </div>
     <div class="macc">
-      <button type="button" aria-expanded="false">고객지원<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l5 5 5-5"/></svg></button>
+      <button type="button" aria-expanded="false">고객지원<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M5 8l5 5 5-5"/></svg></button>
       <ul>
         <li><a href="support/consult/">고객 상담</a></li>
         <li><a href="support/estimate/">실사 및 견적 신청</a></li>
@@ -135,7 +139,8 @@
       <figure class="ph dark hero-shot">
         <!-- 사진: Unsplash License(상업적 이용 · 출처 표기 불필요) · https://unsplash.com/photos/2e959784a276 -->
         <picture>
-          <source type="image/webp" srcset="assets/hero-solar.webp">
+          <source type="image/avif" srcset="assets/hero-solar-800.avif 800w, assets/hero-solar.avif 1280w" sizes="(max-width:960px) 100vw, 560px">
+          <source type="image/webp" srcset="assets/hero-solar-800.webp 800w, assets/hero-solar.webp 1280w" sizes="(max-width:960px) 100vw, 560px">
           <img src="assets/hero-solar.jpg" width="1280" height="852" alt="태양광 발전 현장" fetchpriority="high" decoding="async">
         </picture>
         <span class="wm" aria-hidden="true">energy &amp; green</span>
@@ -143,9 +148,10 @@
       <div class="hero-stats">
         <div><b>태양광 + ESS</b><span>발전소 구축과 에너지저장 연계</span></div>
         <div><b>정부 지원사업</b><span>신청 · 인허가 전문 컨설팅</span></div>
-        <div><b>20년 운영</b><span>발전량 모니터링 · 정기 점검</span></div>
+        <div><b>지속 관리</b><span>발전량 모니터링 · 정기 점검</span></div>
       </div>
     </div>
+    <span class="scroll-cue" aria-hidden="true"></span>
   </section>
 
 </main>
@@ -153,7 +159,7 @@
 <footer>
   <div class="wrap">
     <div>
-      <div class="logo"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 3c-8 0-14 6-14 14 0 3 1 5.5 2.5 7.5C8 19 12 15 18 13c-3 4-4 8-3.5 12C22 25 29 19 30 10c-2.5-4-7-7-12-7z" fill="#1E7A3C"/><path d="M19 19c-4 3-6 7-6 12 1 1 3 2 5 2 7 0 13-5 14-12-4 1-9 0-13-2z" fill="#7CC242"/></svg><span>정수 E&amp;G<small>energy &amp; green</small></span></div>
+      <div class="logo"><svg class="logo-full" role="img" aria-label="정수 E&amp;G energy &amp; green" focusable="false"><use href="assets/logo.svg#full"/></svg></div>
       <div class="info">
         <span><b>상호명</b>정수 E&amp;G</span>
         <span><b>대표자</b>김창성</span>
