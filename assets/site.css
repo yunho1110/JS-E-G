@@ -518,7 +518,7 @@ a.prod{color:inherit}
 /* ───── 9. 푸터 · 플로팅 상담 ───── */
 footer{background:var(--navy-950);color:var(--on-dark-muted);padding-block:clamp(3.5rem,6vw,5.5rem) var(--sp-6);font-size:var(--fs-sm);border-top:5px solid var(--accent)}
 footer .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--sp-6) var(--sp-8)}
-footer .logo{margin-bottom:2rem;--lg-dark:#FFFFFF;--lg-lime:#8CC63F}
+footer .logo{margin-bottom:2rem;--lg-dark:#FFFFFF;--lg-lime:#FFFFFF}
 footer .logo .logo-full{--lh:44px}
 footer .info{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(21rem,100%),1fr));gap:.7rem 3rem;max-width:66rem}
 footer .info span{line-height:1.6;display:grid;grid-template-columns:7.5em minmax(0,1fr);column-gap:.5rem}
