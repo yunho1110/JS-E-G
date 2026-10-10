@@ -132,7 +132,38 @@
 </section>
 <section class="sec">
 <div class="wrap">
-<figure class="ph map dark" data-chip="Map coming soon" data-ico="map" data-kind="map" data-slot="about-location-01"><div><b>Kakao Map placeholder</b>&lt;div id="map"&gt; + Kakao Developers app key (JavaScript key) · location marker and directions link</div></figure>
+<div class="kmap">
+<div class="kmap-frame">
+<div class="root_daum_roughmap root_daum_roughmap_landing" id="daumRoughmapContainer1791636419188"></div>
+<p class="kmap-fallback">The map could not be loaded. Please use the button below to open it in Kakao Map.</p>
+</div>
+<div class="kmap-bar">
+<address>102, 20 Hangman 3-ro, Gwangyang-si, Jeollanam-do (Hwanggil-dong)</address>
+<a class="kmap-link" href="https://map.kakao.com/link/search/%EC%A0%84%EB%82%A8%20%EA%B4%91%EC%96%91%EC%8B%9C%20%ED%95%AD%EB%A7%8C3%EB%A1%9C%2020" rel="noopener" target="_blank">View larger on Kakao Map</a>
+</div>
+</div>
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://t1.kakaocdn.net/kakaomapweb/roughmap/loader/prod/roughmapLoader.js"></script>
+<script charset="UTF-8">
+        (function () {
+          var box = document.getElementById('daumRoughmapContainer1791636419188');
+          var frame = box && box.parentNode, last = 0, t;
+          if (!frame) return;
+          if (!window.daum || !daum.roughmap) { frame.classList.add('is-failed'); return; }
+          function draw() {
+            var w = Math.round(frame.clientWidth) || 640;
+            var h = Math.round(w * (w <= 640 ? 0.78 : 0.5));
+            last = w;
+            box.innerHTML = ''; box.removeAttribute('style');
+            new daum.roughmap.Lander({"timestamp":"1791636419188","key":"32jhtr43648","mapWidth":String(w),"mapHeight":String(h)}).render();
+            frame.classList.add('is-ready');
+          }
+          draw();
+          window.addEventListener('resize', function () {
+            clearTimeout(t);
+            t = setTimeout(function () { if (Math.abs(frame.clientWidth - last) > 24) draw(); }, 300);
+          });
+        })();
+      </script>
 </div>
 </section>
 <section class="sec alt">
@@ -168,8 +199,8 @@
 </div>
 </footer>
 <div aria-label="Quick consultation" class="float">
-<a class="f1" href="../../support/estimate/">Free site <br/>survey</a>
-<a class="f2" href="tel:0617936005"><small>Main line</small>061-793-6005</a>
+<a class="f1" href="../../support/estimate/">Free survey <br/>&amp; quote</a>
+<a aria-label="Call us 061-793-6005" class="f2" href="tel:0617936005" title="061-793-6005">Call us</a>
 <a class="f3" href="https://pf.kakao.com/" rel="noopener" target="_blank">KakaoTalk <br/>chat</a><!-- TODO: 카카오 채널 URL로 교체 -->
 </div>
 <script src="../../../assets/site.js"></script>
