@@ -92,7 +92,10 @@ main a[style*="--navy"]{color:var(--brand-text)!important}
 .site-header.scrolled{--nav-h:68px;height:68px}
 .site-header .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
 .logo{display:flex;align-items:center;gap:.7rem;font-family:var(--font-head);font-weight:700;font-size:1.3rem;letter-spacing:-.01em;white-space:nowrap}
-.logo svg{width:38px;height:auto;aspect-ratio:413/430;flex:none;transition:width .3s var(--ease)}
+.logo svg{flex:none}
+.logo-full{--lh:40px;height:var(--lh);width:calc(var(--lh)*3.945);display:block;transition:height .3s var(--ease),width .3s var(--ease)}
+.site-header.scrolled .logo-full{--lh:36px}
+.vh{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .logo span{display:flex;flex-direction:column;line-height:1.05}
 .logo small{font-size:.66rem;font-weight:600;letter-spacing:.1em;color:var(--lg-lime-t,var(--lg-lime));font-style:italic;margin-top:3px}
 .site-header.solid .logo>span:first-of-type,.site-header.sub-page .logo>span:first-of-type,.site-header.open .logo>span:first-of-type{color:var(--brand-text)}
@@ -148,7 +151,7 @@ main a[style*="--navy"]{color:var(--brand-text)!important}
   .gnb,.cta-nav{display:none}
   .burger{display:block}
   .logo{font-size:1.15rem}
-  .logo svg{width:32px}
+  .logo-full,.site-header.scrolled .logo-full{--lh:34px}
   .site-header.scrolled{--nav-h:68px}
 }
 
@@ -492,7 +495,7 @@ footer{background:var(--sky);border-top:1px solid var(--line);padding-block:var(
 footer .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--sp-6)}
 footer .logo{color:var(--brand-text);font-size:1.125rem;margin-bottom:1.1rem;--lg-dark:#0C5038;--lg-lime:#5FA10F;--lg-lime-t:#3B7508}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) footer .logo{--lg-dark:#E4EFE8;--lg-lime:#8CC63F;--lg-lime-t:#8CC63F}}
-footer .logo svg{width:30px}
+footer .logo .logo-full{--lh:36px}
 footer .info{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(19rem,100%),1fr));gap:.5rem 2.5rem;max-width:64rem}
 footer .info span{line-height:1.6;display:grid;grid-template-columns:7.25em minmax(0,1fr);column-gap:.35rem}
 footer .info span b{color:var(--ink);font-weight:600}
