@@ -152,7 +152,7 @@ button.btn::after{display:none}
 .go{display:inline-flex;align-items:center;gap:.4rem;font-size:var(--fs-sm);font-weight:700;color:var(--brand-text)}
 
 /* ───── 5. 히어로 ───── */
-.hero{position:relative;isolation:isolate;overflow:hidden;background:var(--navy-950);color:var(--on-dark);display:flex;align-items:flex-end;min-height:clamp(680px,100svh,960px);padding:calc(var(--nav-h) + 3rem) 0 clamp(11.5rem,16svh,14.5rem);--gut:max(var(--gutter),calc((100% - var(--wrap))/2))}
+.hero{position:relative;isolation:isolate;overflow:hidden;background:var(--navy-950);color:var(--on-dark);display:flex;align-items:center;min-height:clamp(680px,100svh,960px);padding:var(--nav-h) 0 9.75rem;--gut:max(var(--gutter),calc((100% - var(--wrap))/2))}
 .hero .bg{position:absolute;inset:0;z-index:-3;background:radial-gradient(90% 120% at 0% 100%,#0F2A4D 0%,rgba(15,42,77,0) 60%),var(--navy-950)}
 /* 도면 격자 — 왼쪽 면에만 희미하게 */
 .hero::before{content:"";position:absolute;inset:0;z-index:-2;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:80px 80px;-webkit-mask:linear-gradient(90deg,#000 0,#000 35%,transparent 70%);mask:linear-gradient(90deg,#000 0,#000 35%,transparent 70%)}
@@ -670,3 +670,7 @@ html[lang="en"] .gnb>li>a{font-size:1rem;padding:0 1rem}
 .kmap-bar address{font-style:normal;font-weight:600;color:var(--navy-900);letter-spacing:-.01em}
 .kmap-link{display:inline-flex;align-items:center;min-height:2.75rem;padding:0 1.25rem;border:1px solid var(--navy-900);border-radius:var(--r-1,4px);font-weight:600;font-size:var(--fs-sm);color:var(--navy-900);transition:background-color .2s,color .2s}
 .kmap-link:hover{background:var(--navy-900);color:#fff}
+
+/* 제품 카드가 2개뿐인 섹션은 2열로 꽉 채움 */
+.prods:has(>.prod:nth-child(2):last-child):not([style*="repeat"]){grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:600px){.prods:has(>.prod:nth-child(2):last-child):not([style*="repeat"]){grid-template-columns:minmax(0,1fr)}}

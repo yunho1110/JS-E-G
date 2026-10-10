@@ -39,14 +39,9 @@
 | `product-ess-01` | Pexels — https://www.pexels.com/photo/36594160/ |
 | `product-ess-02` | Pexels — https://www.pexels.com/photo/11645013/ |
 | `product-ess-03` | Unsplash — https://unsplash.com/photos/adef63a95e05 |
-| `product-etc-01` | Pexels — https://www.pexels.com/photo/33706880/ |
-| `product-etc-02` | 자체 제작 샘플 화면 (가상 데이터) |
-| `product-etc-03` | Pexels — https://www.pexels.com/photo/10871929/ |
 | `product-solar-01` | Unsplash — https://unsplash.com/photos/156ae0cdd74d |
 | `product-solar-02` | Pexels — https://www.pexels.com/photo/4320449/ |
-| `product-solar-03` | Unsplash — https://unsplash.com/photos/188b1cf16e9d |
 | `product-solar-04` | Pexels — https://www.pexels.com/photo/37929911/ |
 | `product-solar-05` | Pexels — https://www.pexels.com/photo/35425767/ |
-| `product-solar-06` | 자체 제작 샘플 화면 (가상 데이터) |
 | `support-news-01` | Unsplash — https://unsplash.com/photos/70ca98dd7343 |
 | `support-news-02` | Unsplash — https://unsplash.com/photos/c502d488b3ea |
