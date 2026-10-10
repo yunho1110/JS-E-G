@@ -28,7 +28,7 @@
 - **product** — 제품 사진 필요 (제조사 자료 사용 허가 확인)
 - **map** — 지도 연동 예정
 
-## 슬롯 목록 (42개)
+## 슬롯 목록 (37개)
 
 | 슬롯 | 페이지 | 대상 | 비율 | 구분 | 권장 구도 · 비고 | 저장 위치 |
 |---|---|---|---|---|---|---|
@@ -63,21 +63,16 @@
 | `product-ess-01` | /product/ess/ | 배터리 랙 사진 | 4:3 | product | 제품 사진 · 제조사 자료 사용 허가 확인 | `assets/img/product/product-ess-01.*` |
 | `product-ess-02` | /product/ess/ | PCS 사진 | 4:3 | product | 제품 사진 · 제조사 자료 사용 허가 확인 | `assets/img/product/product-ess-02.*` |
 | `product-ess-03` | /product/ess/ | 컨테이너형 ESS 사진 | 4:3 | product | 제품 사진 · 제조사 자료 사용 허가 확인 | `assets/img/product/product-ess-03.*` |
-| `product-etc-01` | /product/etc/ | 배전반 사진 | 4:3 | product | 제품 사진 · 제조사 자료 사용 허가 확인 | `assets/img/product/product-etc-01.*` |
-| `product-etc-02` | /product/etc/ | 모니터링 화면 | 4:3 | product | 제품 사진 · 제조사 자료 사용 허가 확인 | `assets/img/product/product-etc-02.*` |
-| `product-etc-03` | /product/etc/ | 안전설비 사진 | 4:3 | product | 제품 사진 · 제조사 자료 사용 허가 확인 | `assets/img/product/product-etc-03.*` |
 | `product-solar-01` | /product/solar/ | 진코솔라 모듈 사진 | 4:3 | product | 제품 사진 · 제조사 자료 사용 허가 확인 | `assets/img/product/product-solar-01.*` |
 | `product-solar-02` | /product/solar/ | 신성이엔지 모듈 사진 | 4:3 | product | 제품 사진 · 제조사 자료 사용 허가 확인 | `assets/img/product/product-solar-02.*` |
-| `product-solar-03` | /product/solar/ | 구조물 · 설치 사진 | 4:3 | product | 제품 사진 · 제조사 자료 사용 허가 확인 | `assets/img/product/product-solar-03.*` |
 | `product-solar-04` | /product/solar/ | OCI 인버터 사진 | 4:3 | product | 제품 사진 · 제조사 자료 사용 허가 확인 | `assets/img/product/product-solar-04.*` |
 | `product-solar-05` | /product/solar/ | 다스테크 인버터 사진 | 4:3 | product | 제품 사진 · 제조사 자료 사용 허가 확인 | `assets/img/product/product-solar-05.*` |
-| `product-solar-06` | /product/solar/ | 모니터링 화면 캡처 | 4:3 | product | 제품 사진 · 제조사 자료 사용 허가 확인 | `assets/img/product/product-solar-06.*` |
 | `support-news-01` | /support/news/ | 보도 · 행사 사진 | 4:3 | real | 준공식 · 협약식 등 | `assets/img/news/support-news-01.*` |
 | `support-news-02` | /support/news/ | 보도 · 행사 사진 | 4:3 | real |  | `assets/img/news/support-news-02.*` |
 
 ## 현재 사용 중인 시안용 이미지
 
-- 41개 슬롯 전부 **시안용 임시 이미지**(스톡·AI·샘플 화면)가 들어 있습니다. 출처는 `CREDITS.md`. 실제 사진으로 교체할 때는 같은 파일명(JPG/WebP/AVIF)으로 덮어쓰고, 해당 `<figure>`의 `data-chip="시안용 이미지"`를 지우면 칩이 사라집니다. 실적·제품 페이지의 시안 이미지는 실제 자료로 반드시 교체해야 합니다.
+- 36개 슬롯 전부 **시안용 임시 이미지**(스톡·AI·샘플 화면)가 들어 있습니다. 출처는 `CREDITS.md`. 실제 사진으로 교체할 때는 같은 파일명(JPG/WebP/AVIF)으로 덮어쓰고, 해당 `<figure>`의 `data-chip="시안용 이미지"`를 지우면 칩이 사라집니다. 실적·제품 페이지의 시안 이미지는 실제 자료로 반드시 교체해야 합니다.
 
 ## 현재 사용 중인 실제 이미지
 
