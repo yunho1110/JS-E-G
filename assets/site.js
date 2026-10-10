@@ -9,6 +9,7 @@
   var touchMq = window.matchMedia('(hover: none)');
   var header = $('#header'), burger = $('#burger'), mnav = $('#mnav');
   var isHome = d.body.classList.contains('home');
+  var EN = d.documentElement.lang === 'en';
 
   /* ── 1. 헤더: 스크롤 상태 전환 (rAF로 한 프레임에 한 번만) ── */
   var ticking = false, heroEl = $('.hero'), shotEl = $('.hero-shot'), heroVisible = !!heroEl;
@@ -50,7 +51,7 @@
     mnav.classList.toggle('open', open);
     header.classList.toggle('open', open);
     burger.setAttribute('aria-expanded', open);
-    burger.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
+    burger.setAttribute('aria-label', open ? (EN ? 'Close menu' : '메뉴 닫기') : (EN ? 'Open menu' : '메뉴 열기'));
     d.documentElement.style.overflow = open ? 'hidden' : '';
     if (open) {
       var cur = $('.macc.current', mnav);
@@ -125,6 +126,19 @@
     if (!e.target.closest('.gnb')) tops.forEach(function (o) { o.classList.remove('touched'); });
   });
 
+  /* ── 4-2. 언어 선택(지구본): 마우스는 CSS 호버, 터치·키보드는 클릭/Enter로 열기 ── */
+  $$('.lang').forEach(function (box) {
+    var btn = $('.lang-btn', box);
+    function set(open) { box.classList.toggle('open', open); btn.setAttribute('aria-expanded', open); }
+    btn.addEventListener('click', function (e) { e.stopPropagation(); set(!box.classList.contains('open')); });
+    box.addEventListener('keydown', function (e) { if (e.key === 'Escape') { set(false); btn.focus(); } });
+    box.addEventListener('mouseleave', function () { set(false); });
+    d.addEventListener('pointerdown', function (e) { if (!box.contains(e.target)) set(false); });
+    $$('.lang-list a', box).forEach(function (a) {
+      a.addEventListener('click', function () { try { localStorage.setItem('jsl-lang', a.getAttribute('hreflang')); } catch (x) {} });
+    });
+  });
+
   /* ── 5. 스크롤 리빌 — 첫 화면 밖의 요소만, 늦게 뜨지 않도록 짧게 ── */
   var revealSel = [
     '.sec-title', '.prose', '.side', '.vals .val', '.prods .prod', '.pf .item', '.steps li', '.pintro li',
@@ -197,7 +211,7 @@
       if (!cf.reportValidity()) return;
       var data = new FormData(cf), lines = [];
       data.forEach(function (v, k) { if (k !== 'files' && k !== 'agree') lines.push(k + ': ' + v); });
-      location.href = 'mailto:5000220@daum.net?subject=' + encodeURIComponent('[홈페이지 문의] ' + (data.get('type') || '')) +
+      location.href = 'mailto:5000220@daum.net?subject=' + encodeURIComponent((EN ? '[Website inquiry] ' : '[홈페이지 문의] ') + (data.get('type') || '')) +
         '&body=' + encodeURIComponent(lines.join('\n'));
     });
   }
