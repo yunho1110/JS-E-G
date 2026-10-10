@@ -75,6 +75,10 @@
 | `support-news-01` | /support/news/ | 보도 · 행사 사진 | 4:3 | real | 준공식 · 협약식 등 | `assets/img/news/support-news-01.*` |
 | `support-news-02` | /support/news/ | 보도 · 행사 사진 | 4:3 | real |  | `assets/img/news/support-news-02.*` |
 
+## 현재 사용 중인 시안용 이미지
+
+- 41개 슬롯 전부 **시안용 임시 이미지**(스톡·AI·샘플 화면)가 들어 있습니다. 출처는 `CREDITS.md`. 실제 사진으로 교체할 때는 같은 파일명(JPG/WebP/AVIF)으로 덮어쓰고, 해당 `<figure>`의 `data-chip="시안용 이미지"`를 지우면 칩이 사라집니다. 실적·제품 페이지의 시안 이미지는 실제 자료로 반드시 교체해야 합니다.
+
 ## 현재 사용 중인 실제 이미지
 
 - 홈 히어로: `assets/hero-solar*.{jpg,webp,avif}` — Unsplash 스톡 사진(출처 불필요 라이선스)입니다. 정수 E&G의 실제 현장이 아니므로 **자사 현장 사진으로 교체를 권장**합니다. 교체 시 같은 파일명으로 덮어쓰면 됩니다.

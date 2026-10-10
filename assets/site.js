@@ -97,8 +97,38 @@
   var tops = $$('.gnb>li');
   function topLink(li) { return li.querySelector(':scope>a'); }
   function subLinks(li) { return $$('.sub a', li); }
+  /* 하위 목차는 부모 메뉴 글자의 가운데 아래에 펼치고, 화면 밖으로 나가지 않게 헤더 콘텐츠 폭 안으로 맞춘다 */
+  function placeSub(li) {
+    var sub = $('.sub', li), a = topLink(li);
+    if (!sub || !a || getComputedStyle(sub).position !== 'absolute') return;
+    var f = sub.firstElementChild, l = sub.lastElementChild;
+    if (!f || !l) return;
+    var w = l.getBoundingClientRect().right - f.getBoundingClientRect().left;
+    var wrapEl = $('.wrap', header), wr = wrapEl.getBoundingClientRect(), cs = getComputedStyle(wrapEl);
+    var minX = wr.left + parseFloat(cs.paddingLeft), maxX = wr.right - parseFloat(cs.paddingRight) - w;
+    var ar = a.getBoundingClientRect(), x = ar.left + ar.width / 2 - w / 2;
+    sub.style.setProperty('--sx', Math.round(Math.max(minX, Math.min(x, Math.max(minX, maxX)))) + 'px');
+  }
   tops.forEach(function (li, idx) {
     var a = topLink(li);
+    li.addEventListener('mouseenter', function () { placeSub(li); });
+    /* 마우스 이동 의도 처리: 펼쳐진 목차로 비스듬히 내려가다 옆 메뉴를 스치거나 잠깐 벗어나도 닫히거나 바뀌지 않는다 */
+    function openHot() {
+      tops.forEach(function (o) { if (o !== li) { clearTimeout(o._hot); o.classList.remove('hot'); } });
+      li.classList.add('hot');
+    }
+    li.addEventListener('mouseenter', function () {
+      if (touchMq.matches) return;
+      clearTimeout(li._hot);
+      var open = tops.some(function (o) { return o.classList.contains('hot'); });
+      if (!open || li.classList.contains('hot')) openHot();
+      else { clearTimeout(li._pend); li._pend = setTimeout(openHot, 160); }
+    });
+    li.addEventListener('mouseleave', function () {
+      clearTimeout(li._pend);
+      clearTimeout(li._hot);
+      li._hot = setTimeout(function () { li.classList.remove('hot'); }, 280);
+    });
     li.addEventListener('mouseenter', function () { li.classList.remove('dismissed'); });
     li.addEventListener('mouseleave', function () { li.classList.remove('dismissed'); });
     li.addEventListener('focusin', function () { li.classList.remove('dismissed'); });
@@ -118,6 +148,7 @@
       if (touchMq.matches && li.querySelector('.sub') && !li.classList.contains('touched')) {
         e.preventDefault();
         tops.forEach(function (o) { o.classList.remove('touched'); });
+        placeSub(li);
         li.classList.add('touched');
       }
     });
