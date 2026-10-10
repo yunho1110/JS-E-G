@@ -541,14 +541,15 @@ footer .copy{margin-top:2.25rem;font-size:var(--fs-xs);color:var(--steel-2)}
 .float .f3 br{display:none}
 @media (hover:hover) and (pointer:fine){.float .f1:hover{background:#143E73}.float .f2:hover,.float .f3:hover{background:var(--mist)}}
 @media (max-width:960px){
-  .float{top:auto;bottom:calc(10px + env(safe-area-inset-bottom));left:12px;right:12px;transform:none;width:auto;display:grid;grid-template-columns:1.35fr 1fr 1fr}
-  .float a{flex-direction:row;gap:.45rem;padding:.7rem .3rem;min-height:56px;font-size:.875rem}
+  .float{top:auto;bottom:0;left:0;right:0;transform:none;width:auto;display:grid;grid-template-columns:1.25fr 1fr 1fr;border-radius:16px 16px 0 0;padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -4px 18px rgba(10,26,48,.14);transition:transform .28s var(--ease,ease)}
+  .float.is-hidden{transform:translateY(105%)}
+  .float a{flex-direction:column;gap:.25rem;padding:.55rem .25rem;min-height:58px;font-size:.75rem;line-height:1.25}
+  .float a::before{width:20px;height:20px}
   .float a+a{border-top:0;border-left:1px solid var(--line)}
-  .float .f1 br{display:none}
-  .float .f1{padding-block:.7rem}
-  footer{padding-bottom:calc(var(--sp-8) + 70px + env(safe-area-inset-bottom))}
+  .float .f1 br{display:inline}
+  .float .f1{padding-block:.55rem}
+  footer{padding-bottom:calc(var(--sp-8) + 64px + env(safe-area-inset-bottom))}
 }
-@media (max-width:380px){.float a::before{display:none}}
 
 /* ───── 10. 모션 ─────
    한 번의 연출: 첫 화면(히어로·서브 상단)이 순서대로 열린다. 그 외에는 스크롤 시 짧은 등장과

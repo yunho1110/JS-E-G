@@ -246,4 +246,21 @@
         '&body=' + encodeURIComponent(lines.join('\n'));
     });
   }
+
+  /* 모바일 하단 상담 바: 아래로 스크롤하면 숨기고, 위로 올리거나 맨 위/맨 아래에서는 보여 준다 */
+  (function () {
+    var fl = document.querySelector('.float'); if (!fl) return;
+    var mq = window.matchMedia('(max-width: 960px)'), lastY = window.scrollY, tick = false;
+    function update() {
+      tick = false;
+      var y = window.scrollY, dy = y - lastY, h = document.documentElement;
+      var nearEnd = y + window.innerHeight >= h.scrollHeight - 80;
+      if (!mq.matches || y < 120 || nearEnd || dy < -6) fl.classList.remove('is-hidden');
+      else if (dy > 8) fl.classList.add('is-hidden');
+      lastY = y;
+    }
+    window.addEventListener('scroll', function () { if (!tick) { tick = true; requestAnimationFrame(update); } }, { passive: true });
+    fl.addEventListener('focusin', function () { fl.classList.remove('is-hidden'); });
+    mq.addEventListener && mq.addEventListener('change', function () { fl.classList.remove('is-hidden'); });
+  })();
 })();
