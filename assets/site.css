@@ -448,7 +448,7 @@ a.prod{color:inherit}
 
 /* 인사말 */
 .greet{padding-block:var(--sec-y)}
-.greet .wrap{display:grid;grid-template-columns:minmax(260px,380px) minmax(0,1fr);gap:clamp(2.5rem,7vw,6.5rem);align-items:start}
+.greet .wrap{display:grid;grid-template-columns:minmax(0,1fr);justify-items:center;gap:clamp(2.5rem,7vw,6.5rem);align-items:start}
 .portrait{position:sticky;top:calc(var(--nav-h) + 2rem);aspect-ratio:3/4;border-radius:var(--r-1);background:var(--mist) url(gfx/ph-person.svg) center 38%/84px no-repeat;border:1.5px solid var(--line);border-bottom:5px solid var(--accent);display:grid;place-items:end center;color:var(--muted);font-size:var(--fs-xs);letter-spacing:.02em;text-align:center;padding:1.5rem;line-height:1.7}
 .portrait b{display:block;font-size:var(--fs-sm);color:var(--navy-900);margin-bottom:.3rem}
 .letter{max-width:60ch;font-size:var(--fs-prose);line-height:var(--lh-prose)}
