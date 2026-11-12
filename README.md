@@ -4,7 +4,7 @@
 
 - `index.html` — 메인 홈 (단일 파일, 외부 의존성은 Google Fonts뿐)
 - `about/greeting/index.html` — 인사말
-- `docs/` — 원고·회의 정리
+- `docs/` — 원고·양도 가이드·점검 보고서
 
 ## 구조 (기획서 기준)
 
