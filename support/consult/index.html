@@ -10,9 +10,7 @@
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#0A1A30">
 <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap">
+<link rel="stylesheet" href="../../assets/fonts/noto-sans-kr/wght.css">
 <link rel="stylesheet" href="../../assets/site.css?v=7af3415a">
 </head>
 <body class="subpage">
@@ -141,9 +139,10 @@
         <div class="row"><div><label for="c-name">성함 <em>*</em></label><input id="c-name" name="name" required></div><div><label for="c-tel">연락처 <em>*</em></label><input id="c-tel" name="tel" type="tel" required placeholder="010-0000-0000"></div></div>
         <div><label for="c-mail">이메일</label><input id="c-mail" name="email" type="email"></div>
         <div><label for="c-msg">문의 내용 <em>*</em></label><textarea id="c-msg" name="msg" required placeholder="궁금하신 내용을 자유롭게 적어 주세요."></textarea></div>
-        <label class="agree"><input type="checkbox" name="agree" required> <span>개인정보 수집 및 이용에 동의합니다. 수집 항목 : 성함 · 연락처 · 이메일 / 목적 : 상담 답변 / 보유 : 목적 달성 후 1년. <a href="../../privacy/">전문 보기</a></span></label>
+        <div class="hint" id="consentInfo"><b>개인정보 수집 · 이용 안내</b><br>수집 항목 — 필수 : 문의 유형 · 성함 · 연락처 · 문의 내용 / 선택 : 이메일<br>이용 목적 — 문의 답변<br>보유 기간 — 목적 달성 후 1년 이내 파기<br>동의를 거부할 수 있으며, 거부하면 온라인 문의가 제한됩니다. 전화(061-793-6005)로 상담하실 수 있습니다.</div>
+        <label class="agree"><input type="checkbox" name="agree" required aria-describedby="consentInfo"> <span>[필수] 위 개인정보 수집 · 이용에 동의합니다. <a href="../../privacy/">개인정보처리방침 보기</a></span></label>
         <button class="btn btn-sun" type="submit">상담 신청</button>
-        <div class="hint">※ 현재는 메일 앱으로 내용이 전달됩니다.</div>
+        <div class="hint">※ 입력하신 내용은 이용자의 메일 앱을 통해 회사 메일(5000220@daum.net)로 전달되며 이 홈페이지에는 저장되지 않습니다.</div>
       </form>
       <aside class="side">
         <h3>전화 · 카카오톡 상담</h3>
@@ -169,7 +168,7 @@
       </div>
       <div class="copy">© 정수 E&amp;G. All rights reserved.</div>
     </div>
-    <nav><a href="../../privacy/">개인정보처리방침</a><a href="../../about/location/">오시는 길</a><a href="../../support/news/">홍보자료</a></nav>
+    <nav><a href="../../privacy/">개인정보처리방침</a><a href="../../policy/copyright/">저작권 및 이용 안내</a><a href="../../policy/accessibility/">웹 접근성 안내</a><a href="../../about/location/">오시는 길</a><a href="../../support/news/">홍보자료</a></nav>
   </div>
 </footer>
 
@@ -179,6 +178,6 @@
   <a class="f3" href="https://pf.kakao.com/" target="_blank" rel="noopener">카카오톡<br>상담</a><!-- TODO: 카카오 채널 URL로 교체 -->
 </div>
 
-<script src="../../assets/site.js?v=fc0d5d22"></script>
+<script src="../../assets/site.js?v=72b2cdae"></script>
 </body>
 </html>

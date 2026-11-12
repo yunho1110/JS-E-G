@@ -11,9 +11,7 @@
 <meta content="light" name="color-scheme"/>
 <meta content="#0A1A30" name="theme-color"/>
 <link href="../../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="../../../assets/fonts/noto-sans-kr/wght.css" rel="stylesheet"/>
 <link href="../../../assets/site.css?v=7af3415a" rel="stylesheet"/>
 </head>
 <body class="subpage">
@@ -137,9 +135,10 @@
 <div class="row"><div><label for="c-name">Name <em>*</em></label><input id="c-name" name="name" required=""/></div><div><label for="c-tel">Phone <em>*</em></label><input id="c-tel" name="tel" placeholder="010-0000-0000" required="" type="tel"/></div></div>
 <div><label for="c-mail">Email</label><input id="c-mail" name="email" type="email"/></div>
 <div><label for="c-msg">Message <em>*</em></label><textarea id="c-msg" name="msg" placeholder="Please write freely about what you would like to know." required=""></textarea></div>
-<label class="agree"><input name="agree" required="" type="checkbox"/> <span>I agree to the collection and use of personal information. Items collected: name · phone · email / Purpose: replying to the inquiry / Retention: one year after the purpose is achieved. <a href="../../privacy/">View full text</a></span></label>
+<div class="hint" id="consentInfo"><b>Notice on collection and use of personal information</b><br/>Items — Required: inquiry type · name · phone · inquiry / Optional: email<br/>Purpose — replying to your inquiry<br/>Retention — destroyed within 1 year after the purpose is achieved<br/>You may refuse consent; if you do, online inquiries are limited. You can consult us by phone at 061-793-6005.</div>
+<label class="agree"><input aria-describedby="consentInfo" name="agree" required="" type="checkbox"/> <span>[Required] I agree to the collection and use of personal information above. <a href="../../privacy/">View Privacy Policy</a></span></label>
 <button class="btn btn-sun" type="submit">Request consultation</button>
-<div class="hint">※ For now, your message is passed to your email app.</div>
+<div class="hint">* What you enter is sent to the company mailbox (5000220@daum.net) through your own mail app and is not stored on this website.</div>
 </form>
 <aside class="side">
 <h3>Phone · KakaoTalk consultation</h3>
@@ -164,7 +163,7 @@
 </div>
 <div class="copy">© Jeongsu E&amp;G. All rights reserved.</div>
 </div>
-<nav><a href="../../privacy/">Privacy Policy</a><a href="../../about/location/">Directions</a><a href="../../support/news/">Press Materials</a></nav>
+<nav><a href="../../privacy/">Privacy Policy</a><a href="../../policy/copyright/">Copyright &amp; Terms of Use</a><a href="../../policy/accessibility/">Web Accessibility</a><a href="../../about/location/">Directions</a><a href="../../support/news/">Press Materials</a></nav>
 </div>
 </footer>
 <div aria-label="Quick consultation" class="float">
@@ -172,6 +171,6 @@
 <a aria-label="Call us 061-793-6005" class="f2" href="tel:0617936005" title="061-793-6005">Call us</a>
 <a class="f3" href="https://pf.kakao.com/" rel="noopener" target="_blank">KakaoTalk <br/>chat</a><!-- TODO: 카카오 채널 URL로 교체 -->
 </div>
-<script src="../../../assets/site.js?v=fc0d5d22"></script>
+<script src="../../../assets/site.js?v=72b2cdae"></script>
 </body>
 </html>
