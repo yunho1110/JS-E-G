@@ -242,6 +242,7 @@
       if (!cf.reportValidity()) return;
       var data = new FormData(cf), lines = [];
       data.forEach(function (v, k) { if (k !== 'files' && k !== 'agree') lines.push(k + ': ' + v); });
+      lines.push((EN ? 'Consent to collection and use of personal information: Yes / ' : '개인정보 수집·이용 동의: 예 / ') + new Date().toISOString());
       location.href = 'mailto:5000220@daum.net?subject=' + encodeURIComponent((EN ? '[Website inquiry] ' : '[홈페이지 문의] ') + (data.get('type') || '')) +
         '&body=' + encodeURIComponent(lines.join('\n'));
     });

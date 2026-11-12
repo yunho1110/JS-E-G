@@ -4,7 +4,7 @@
 
 - `index.html` — 메인 홈 (단일 파일, 외부 의존성은 Google Fonts뿐)
 - `about/greeting/index.html` — 인사말
-- `docs/` — 원고·회의 정리
+- `docs/` — 원고·양도 가이드·점검 보고서
 
 ## 구조 (기획서 기준)
 
@@ -17,3 +17,9 @@
 ## 이미지 출처
 
 - `assets/hero-solar.jpg` — Unsplash (Unsplash License · 상업적 이용 가능, 출처 표기 의무 없음)
+
+## 실제 현장·사무실 사진 (2026-11 반영)
+
+- `assets/img/real/` — 대표님이 카카오톡으로 보내주신 현장·사무실 사진(웹용 변환본). 고흥 현장 4장은 대표님이 붙인 구역명(쏠라파워 / 파워제네레이션 / 쏠라뱅크)을 사진 설명에 사용.
+- 로고는 대표님 원본 `로고.ai`(PDF 기반)를 SVG로 변환해 `<symbol id="jsl-full">` 로 삽입 (파일 상단 스프라이트).
+- 양도 방법은 `docs/handover.md`.
