@@ -786,5 +786,7 @@
  "지금 광양과 여수의 산단 지붕은 대부분 채워졌고, 저희 현장은 광양을 넘어 전국으로 넓어졌습니다. 그 사이 이 지역은 태양광이 늘어난 만큼 한전 송전선로가 부족해졌습니다. 발전한 전기를 저장했다가 선로에 여유가 있을 때 보내는 ESS를 함께 하게 된 이유입니다. 고흥 발전소는 태양광 4MW와 ESS 11MW를 한 자리에서 운영하고 있습니다.": "Today most industrial-complex roofs in Gwangyang and Yeosu are filled, and our sites have spread beyond Gwangyang across the country. As solar grew in this region, KEPCO transmission line capacity ran short. That is why we also took on ESS, which stores the electricity generated and sends it when the line has room. The Goheung plant runs 4MW of solar and 11MW of ESS on a single site.",
  "글꼴 Noto Sans KR 은 SIL Open Font License 1.1 에 따라 이용합니다. 일부 시안용 이미지는 Unsplash · Pexels 라이선스 또는 AI 생성 이미지이며 해당 이미지에는 시안임을 표시합니다.": "The Noto Sans KR font is used under the SIL Open Font License 1.1. Some concept images come from Unsplash or Pexels licenses or are AI-generated, and are marked as concept images.",
  "외부 기관의 웹 접근성 인증 · 전수 점검은 받지 않았습니다. 지도(카카오 지도) 등 외부 서비스 화면은 회사가 직접 수정할 수 없어 접근성이 제한될 수 있습니다. 시안용 이미지의 대체 텍스트는 실제 사진으로 교체할 때 함께 수정합니다.": "The site has not received external web accessibility certification or a full external audit. External services such as the Kakao map cannot be modified by the company, so their accessibility may be limited. Alt text for concept images will be updated when they are replaced with real photos.",
- "ESS 추가 설치": "Additional ESS installation"
+ "ESS 추가 설치": "Additional ESS installation",
+ "부지 태양광": "Land-based solar",
+ "유지보수 계약": "Maintenance contract"
 }
