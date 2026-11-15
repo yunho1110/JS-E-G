@@ -543,7 +543,7 @@ footer .copy{margin-top:2.25rem;font-size:var(--fs-xs);color:var(--steel-2)}
 .float .f3 br{display:none}
 @media (hover:hover) and (pointer:fine){.float .f1:hover{background:#143E73}.float .f2:hover,.float .f3:hover{background:var(--mist)}}
 @media (max-width:960px){
-  .float{top:auto;bottom:0;left:0;right:0;transform:none;width:auto;display:grid;grid-template-columns:1.25fr 1fr 1fr;border-radius:16px 16px 0 0;padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -4px 18px rgba(10,26,48,.14);transition:transform .28s var(--ease,ease)}
+  .float{top:auto;bottom:0;left:0;right:0;transform:none;width:auto;display:grid;grid-template-columns:1.25fr 1fr;border-radius:16px 16px 0 0;padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -4px 18px rgba(10,26,48,.14);transition:transform .28s var(--ease,ease)}
   .float.is-hidden{transform:translateY(105%)}
   .float a{flex-direction:column;gap:.25rem;padding:.55rem .25rem;min-height:58px;font-size:.75rem;line-height:1.25}
   .float a::before{width:20px;height:20px}
