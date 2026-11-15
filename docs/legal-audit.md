@@ -116,3 +116,10 @@
 - 디지털포용법 시행: https://www.ajunews.com/view/20260121093859321 · https://www.ddaily.co.kr/page/view/2026012110374732032
 - Google Fonts 요청 정보: https://developers.google.com/fonts/faq/privacy?hl=ko
 - 원문 확인처: https://www.law.go.kr · https://www.pipc.go.kr · https://privacy.go.kr
+
+## 2026-11-15 갱신 (확정되지 않은 자료 정리)
+
+- 삭제: 누적 시공 건수·용량, 실적 목록 표, 현장별 지역·용량·준공일, 시공 사례 CASE 02, 기타 실적 페이지, 뉴스·홍보자료 페이지(메뉴·푸터 포함), 2026 연혁 계획 항목, 시공 가능 규모, FAQ 수치 항목 3개, 카카오톡 채널 버튼(채널 URL 미정)
+- 남은 시안 이미지 없음 (Unsplash · Pexels · AI 이미지 사용 페이지 모두 정리)
+- 처리방침 · 이용 안내 · 접근성 안내의 "대표 확인" 표시 삭제. 단, **시행 전 대표가 최종 확인할 사항**: 위탁 업체 없음, 안전성 확보조치 내용, GitHub(미국) 호스팅의 국외 이전 해당 여부, 게시 고객사(대광케미칼 등)의 게시 동의
+- 자료가 생기면 다시 추가: 뉴스 · 브로셔 · 연혁 · 현장별 용량 · 카카오 채널
